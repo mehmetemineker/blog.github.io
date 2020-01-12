@@ -11,9 +11,9 @@ tags:
 ---
 Türkçe karakter destekli veritabanı için aşağıdaki SQL kodlarını kullanmanız yeterli olacaktır.
 <!--more-->
-
+```sql
 ALTER DATABASE veritabani_adi SET SINGLE_USER WITH ROLLBACK IMMEDIATE
 ALTER DATABASE veritabani_adi COLLATE TURKISH_CI_AS
 ALTER DATABASE veritabani_adi SET MULTI_USER
-
+```
 > Olur ya bir gün görüşemezsek iyi günler, iyi akşamlar ve iyi geceler…

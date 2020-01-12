@@ -3,6 +3,7 @@ published: true
 layout: post
 title: EntityFramework AsNoTracking Nedir?
 date: '2018-05-13 15:27:39 -0500'
+thumbnail: /gallery/thumbnails/csharp.jpg
 categories:
   - .Net
   - 'C#'
@@ -30,11 +31,15 @@ AsNoTracking ifadesinin performansı ne kadar etkilediğine görsel olarak birli
 
 Bu ifadenin kullanımı ise aşağıda göreceğiniz üzere çok kolay:
 
-> context.Set<TEntity>().AsNoTracking();
+```csharp
+context.Set<TEntity>().AsNoTracking();
+```
 
 Diğer bir kullanım yönetimi ise DbContext ayarlarından yapılabilir. Bu da tüm queryler için geçerli olacaktır:
 
-> context.ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
+```csharp
+context.ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
+```
 
 ##### Kaynaklar:
 

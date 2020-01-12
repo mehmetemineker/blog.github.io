@@ -12,6 +12,8 @@ tags:
 ---
 Bir sorgu içerisinde herhangi bir kolunun değerini bir fonksiyon ile düzenleyip basarsak performans kaybı olur. Ancak ilk olarak kolona varsayılan değerini basıp daha sonra toplu bir update çekersek gözle görülür performans artışı olur.
 <!--more-->
-> UPDATE upb 
-> SET upb.yas = Hesapla(yas) 
-> FROM TempTable\_UyeProfilBilgileri upb
+```sql
+UPDATE upb 
+SET upb.yas = Hesapla(yas) 
+FROM TempTable_UyeProfilBilgileri upb
+```

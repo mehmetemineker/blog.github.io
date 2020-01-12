@@ -26,8 +26,9 @@ Versiyonlama sistemi için açık kaynak kodlu olan [MSBuild Community Tasks](h
 
 Nuget:
 
-> PM> Install-Package MSBuildTasks
-
+```
+PM> Install-Package MSBuildTasks
+```
 Paketi ekledikten sonra projemizin .csproj dosyasını açıp aşağıdaki özellikleri eklemeliyiz.
 
 <Target Name="BeforeBuild">

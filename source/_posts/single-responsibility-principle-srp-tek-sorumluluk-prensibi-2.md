@@ -22,63 +22,63 @@ Yazılımsal açıdan bakarsak nasıl bir sonuca ulaşırız? Bir sınıfımız 
 Yalnızca kendi sorumluluğunu yerine getirecek şekilde parçalara bölseydik bu sonuç ile karşılaşmayacaktık.
 
 **Örnek C# kodu:**
+```csharp
+public class FullStackDeveloper
+{
+ public void WriteCSharpCode()
+ {
+ Console.WriteLine("I can write C#.");
+ }
 
-> public class FullStackDeveloper
-> {
->  public void WriteCSharpCode()
->  {
->  Console.WriteLine("I can write C#.");
->  }
-> 
->  public void WriteSQLCode()
->  {
->  Console.WriteLine("I can write SQL.");
->  }
-> 
->  public void WriteJavaScriptCode()
->  {
->  Console.WriteLine("I can write JavaScript.");
->  }
-> 
->  public void WriteCSSCode()
->  {
->  Console.WriteLine("I can write CSS.");
->  }
-> }
+ public void WriteSQLCode()
+ {
+ Console.WriteLine("I can write SQL.");
+ }
 
+ public void WriteJavaScriptCode()
+ {
+ Console.WriteLine("I can write JavaScript.");
+ }
+
+ public void WriteCSSCode()
+ {
+ Console.WriteLine("I can write CSS.");
+ }
+}
+```
 “FullStackDeveloper” sınıfımız C#, SQL, JavaScript ve CSS kodu yazabilen bir yazılım geliştiricisini temsil etsin. Tek bir geliştiriciye bu kadar işin yüklenmesi geliştiricinin hata yapma olasılığını yükseltecektir. Çünkü, bir yerden sonra kafa çorbası içilmeye hazır hale gelecektir.
 
 Olması gereken ise aslında şudur:
+```csharp
+public class BackEndDeveloper
+{
+ public void WriteCSharpCode()
+ {
+ Console.WriteLine("I can write C#.");
+ }
+}
 
-> public class BackEndDeveloper
-> {
->  public void WriteCSharpCode()
->  {
->  Console.WriteLine("I can write C#.");
->  }
-> }
-> 
-> public class FrontEndDeveloper
-> {
->  public void WriteJavaScriptCode()
->  {
->  Console.WriteLine("I can write JavaScript.");
->  }
-> 
->  public void WriteCSSCode()
->  {
->  Console.WriteLine("I can write CSS.");
->  }
-> }
-> 
-> public class SQLDeveloper
-> {
->  public void WriteSQLCode()
->  {
->  Console.WriteLine("I can write SQL.");
->  }
-> }
+public class FrontEndDeveloper
+{
+ public void WriteJavaScriptCode()
+ {
+ Console.WriteLine("I can write JavaScript.");
+ }
 
+ public void WriteCSSCode()
+ {
+ Console.WriteLine("I can write CSS.");
+ }
+}
+
+public class SQLDeveloper
+{
+ public void WriteSQLCode()
+ {
+ Console.WriteLine("I can write SQL.");
+ }
+}
+```
 Kısacası, herkes kendi işini yapmalıdır!
 
 > Olur ya bir gün görüşemezsek iyi günler, iyi akşamlar ve iyi geceler…

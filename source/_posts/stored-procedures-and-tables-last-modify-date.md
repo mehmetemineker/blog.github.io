@@ -10,6 +10,11 @@ tags:
 - sql
 - storedprocedures
 ---
-MSSQL **sys.****objects** tablosundan üzerinde değişiklik yapılma tarihlerine göre **tabloları** ve **stored proceduresleri** listeleme sorgusu. **U** ile ifade edilenler tablo, **P** ile ifade edilenler ise SP.
+MSSQL **sys.objects** tablosundan üzerinde değişiklik yapılma tarihlerine göre **tabloları** ve **stored proceduresleri** listeleme sorgusu. **U** ile ifade edilenler tablo, **P** ile ifade edilenler ise SP.
 <!--more-->
-<script src="https://gist.github.com/mehmetemineker/73981ec7af35fa9f1185489923e95edd.js"></script>
+```sql
+SELECT name, create_date, modify_date, type
+FROM sys.objects
+WHERE type = 'U' OR type = 'P'
+ORDER BY modify_date DESC 
+```

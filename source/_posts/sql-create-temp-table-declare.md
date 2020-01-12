@@ -10,4 +10,10 @@ tags:
 ---
 Temp tablo oluşturmak için bir yöntem.
 <!--more-->
-<script src="https://gist.github.com/mehmetemineker/641eeef46e548c05d452aad990b33d92.js"></script>
+```sql
+DECLARE @TempTable TABLE(
+    test1 INT,
+    test2 NVARCHAR(MAX),
+    test3 NVARCHAR(MAX)
+)
+```

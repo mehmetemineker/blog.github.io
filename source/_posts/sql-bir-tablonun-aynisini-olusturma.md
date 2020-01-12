@@ -12,6 +12,7 @@ tags:
 ---
 Bir tablonun aynı kolonlara sahip bir kopyasını oluşturmak istersek yazmamız gereken sorgu şu şekilde:
 <!--more-->
-> select top 0 * into table2 from table1
-
+```sql
+select top 0 * into table2 from table1
+```
 Bu sorgu ile table1 tablosunun aynısını table2 ismiyle oluşturur.

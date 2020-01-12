@@ -15,7 +15,7 @@ Zeal, şuan 195 yazılım teknolojisinin dokümantasyonunu offline olarak sunmak
 <!--more-->
 **IDE Pluginler de şunlar;**
 
-**Atom: **[https://atom.io/packages/dash](https://atom.io/packages/dash)  
+**Atom:** [https://atom.io/packages/dash](https://atom.io/packages/dash)  
 **Brackets:** [https://github.com/anephew/brackets-zeal](https://github.com/anephew/brackets-zeal)  
 **Emacs:** [https://github.com/jinzhu/zeal-at-point](https://github.com/jinzhu/zeal-at-point)  
 **IntelliJ IDEA:** [https://plugins.jetbrains.com/plugin/7351?pr=idea](https://plugins.jetbrains.com/plugin/7351?pr=idea)  

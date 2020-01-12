@@ -3,7 +3,10 @@ published: true
 layout: post
 title: jQuery Video Extend
 date: '2018-05-20 15:27:39 -0500'
-categories: Webmaster
+thumbnail: /gallery/thumbnails/jquery.jpg
+categories: 
+ - Webmaster
+ - Javascript
 tags:
 - webmaster
 - javascript

@@ -3,6 +3,7 @@ published: true
 layout: post
 title: ASP.Net MVC Stars Rating Helper
 date: '2017-05-24 15:27:39 -0500'
+thumbnail: /gallery/thumbnails/csharp.jpg
 categories:
   - .Net
   - 'C#'

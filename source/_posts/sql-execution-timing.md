@@ -12,4 +12,10 @@ tags:
 ---
 MSSQL 2008 ve üzeri sorgu süresini hesaplama
 <!--more-->
-<script src="https://gist.github.com/mehmetemineker/0cad56f90794a9ae8c79e0de4f24b380.js"></script>
+```sql
+Declare @StartTime DateTime = GetDate()
+
+-- my SQL calls
+
+Print 'Time taken was ' + cast(DateDiff(millisecond, @StartTime, GetDate()) as varchar) + 'ms'
+```

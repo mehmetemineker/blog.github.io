@@ -3,7 +3,11 @@ published: true
 layout: post
 title: Evrimsel Sürecin Simülasyonu – Genetik Algoritmalar – 1
 date: '2018-04-08 15:27:39 -0500'
-categories: Algoritmalar
+thumbnail: /gallery/thumbnails/genetic.jpg
+categories: 
+    - Algoritmalar
+    - .Net
+    - 'C#'
 tags:
 - genetik
 - algoritma

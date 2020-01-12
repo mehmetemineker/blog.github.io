@@ -12,4 +12,7 @@ tags:
 ---
 Oracle veritabanında hangi sürümün kullanıldığını merak ettim ve bunu buldum:
 <!--more-->
-> SELECT * FROM V$VERSION
+
+```sql
+SELECT * FROM V$VERSION
+```

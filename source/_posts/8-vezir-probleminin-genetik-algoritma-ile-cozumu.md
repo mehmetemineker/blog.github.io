@@ -3,6 +3,7 @@ published: true
 layout: post
 title: 8 Vezir Probleminin Genetik Algoritma ile Çözümü
 date: '2018-06-04 15:27:39 -0500'
+thumbnail: /gallery/thumbnails/chess.jpg
 categories: Algoritmalar
 tags: 
 - algoritma
@@ -35,7 +36,39 @@ Bildiği üzere genetik algoritmada asıl işi yapan **Fitness Function**‘dır
 _Not: 8 vezirlik bir problemin en uygun fitness function sonucu 28 olarak hesaplanır._
 
 **Problem için hazırladığım fitness function**
-<script src="https://gist.github.com/mehmetemineker/fb6f052f3f4081c3f9c3e31437f67d14.js"></script>
+```csharp
+public class MyProblemFitness : IFitnessFunction
+{
+    public double Evaluate(IChromosome chromosome)
+    {
+        var genes = ((PermutationChromosome)chromosome).Value;
+
+        double result = 0;
+
+        for (int x1 = 0; x1 < genes.Length - 1; x1++)
+        {
+            int y1 = genes[x1];
+
+            int sagdakiVezirSayisi = genes.Length - 1 - x1;
+
+            for (int x2 = x1 + 1; x2 < genes.Length; x2++)
+            {
+                int y2 = genes[x2];
+
+                if (y1 == y2 || x1 - y1 == x2 - y2 || x1 + y1 == x2 + y2)
+                {
+                    sagdakiVezirSayisi -= 1;
+                }
+            }
+
+            result += sagdakiVezirSayisi;
+        }
+
+
+        return result;
+    }
+}
+```
 
 #### Kromozom Yapısı
 

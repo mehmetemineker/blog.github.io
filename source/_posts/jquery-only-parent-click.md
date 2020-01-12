@@ -13,4 +13,16 @@ tags:
 ---
 Jquery ile sadece parent elemente tıklama eventı ekleme.
 <!--more-->
-<script src="https://gist.github.com/mehmetemineker/933adfd399254da18143d383be417f26.js"></script>
+```javascript
+//Sadece Html elementine tıklandığında işlem yapar.
+$('#outer').click(function(e) {
+    if (e.target === this){
+        console.log('Parent');
+    }
+});
+
+//Html elementinin kendisine tıklanmadıysa işlem yapmadan dön.
+$('#outer').click(function(e) {
+     if(e.target != this) return;
+});
+```

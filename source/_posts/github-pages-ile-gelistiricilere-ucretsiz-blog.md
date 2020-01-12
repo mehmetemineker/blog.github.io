@@ -61,23 +61,23 @@ Ruby’yi kurduktan sonra **RubyGems**‘i kurmamız gerekiyor. [rubygems.org/p
 Kurulumun başarılı olup olmadığını anlamak için Komut Satırını (Nam-ı diğer Cemede) açıyoruz.
 
 Ruby için aşağıdaki komutu yazıyoruz.
-
+```
 ruby -v
-
+```
 Eğer versiyon numarası gözükürse başarıyla yüklenmiştir
 
 Aynı durum RubyGems için de geçerli. Bunun için de aşağıdaki komutu yazıyoruz.
-
+```
 gem -v
-
+```
 Versiyon numarasını gördüysek sıkıntı yok.
 
 {% asset_img ruby_gem.png %} 
 
 Ruby’yi ve RubyGems’i yükledikten sonra şimdi sıra **Jekyll**‘in yüklenmesine geldi. Bu sefer komut satırına aşağıdaki komutu yazıyoruz.
-
+```
 gem install jekyll
-
+```
 Jekyll’in yüklenmesi tamamlandığında yine versiyon kontrolü ile yüklenme durumuna bakabilirsiniz.
 
 Bütün kurulumları tamamladık. Şimdi Jekyll ile ilk blogumuzu oluşturmaya hazırız.
@@ -85,21 +85,21 @@ Bütün kurulumları tamamladık. Şimdi Jekyll ile ilk blogumuzu oluşturmaya h
 #### Jekyll Projesi Nasıl Oluşturulur?
 
 Yeni boş bir klasör açıp içerisinde komut satırını çalıştıralım ve aşağıdaki komutu çalıştıralım.
-
+```
 jekyll new {proje adı}
-
+```
 {% asset_img cmd_jekyll.png %} 
 
 Projemiz oluştuktan sonra projemizin bulunduğu dizine geçelim.
-
+```
 cd {proje adı}
-
+```
 {% asset_img cmd_cd.png %} 
 
 Projemizin bulunduğu dizine geçtikten sonra localhost üzerinde test edebiliriz. Bunun için yine komut satırına aşağıdaki komutu yazalım.
-
+```
 jekyll serve
-
+```
 {% asset_img jekyll_serve.png %} 
 
 Bu komutu yazdığımızda **localhost:4000** adresinden projemizin çalışır halini görebiliriz.

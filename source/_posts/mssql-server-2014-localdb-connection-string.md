@@ -15,14 +15,18 @@ Eski projelerimin bazılarında **SQL Server 2012** kullanarak LocalDB bağlant
 
 **SQL Server 2012 LocalDB Connection String**
 
-> <connectionStrings>
-> <add name="DBContext" connectionString="Data Source=(LocalDB)\\v11.0;AttachDbFilename=|DataDirectory|\\Database.mdf;Integrated Security=True;" providerName="System.Data.SqlClient" />
-> </connectionStrings>
+```xml
+<connectionStrings>
+  <add name="DBContext" connectionString="Data Source=(LocalDB)\\v11.0;AttachDbFilename=|DataDirectory|\\Database.mdf;Integrated Security=True;" providerName="System.Data.SqlClient" />
+</connectionStrings>
+```
 
 **SQL Server 2014 LocalDB Connection String**
 
-> <connectionStrings>
-> <add name="DBContext" connectionString="Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\Database.mdf;Integrated Security=True;" providerName="System.Data.SqlClient" />
-> </connectionStrings>
+```xml
+<connectionStrings>
+  <add name="DBContext" connectionString="Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\Database.mdf;Integrated Security=True;" providerName="System.Data.SqlClient" />
+</connectionStrings>
+```
 
 > Olur ya bir gün görüşemezsek iyi günler, iyi akşamlar ve iyi geceler…
