@@ -70,7 +70,8 @@ donate:
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Share
 share:
     # Share plugin name
-    type: 
+    type: sharethis
+    install_url: //platform-api.sharethis.com/js/sharethis.js#property=5e1b71d5e63bc1001173279f&product=inline-share-buttons&cms=sop
 # Sidebar settings.
 # Please be noted that a sidebar is only visible when it has at least one widget
 sidebar:
