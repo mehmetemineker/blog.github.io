@@ -35,6 +35,14 @@ public abstract class MockableDbSetWithExtensions<T> : DbSet<T> where T : class
 }
 ```
 
-Bu metod 2 değişkenli [Tuple](https://docs.microsoft.com/tr-tr/dotnet/api/system.tuple?view=netframework-4.7.2 "Tuple") döndürüyor. **MockableDbSetWithExtensions** nesnesi ile **AddOrUpdate** metodlarını test ediyorum. Bunun yerine sadece DbSet nesnesini de kullanabilirsiniz.
+Bu metod 2 değişkenli [Tuple](https://docs.microsoft.com/tr-tr/dotnet/api/system.tuple?view=netframework-4.7.2 "Tuple") döndürüyor. **MockableDbSetWithExtensions** nesnesi ile **AddOrUpdate** metodlarını test ediyorum. Bunun yerine sadece DbSet nesnesini de kullanabilirsiniz. 
 
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?ss** button for formatting help.
+**Kullanımı**
+
+```csharp
+var fakeData = new List<MyDbSet>()
+var (mockDbContext, mockDbSet) = Utility.MockDb<MyContext, MyDbSet>(fakeData);
+mockDbContext.Setup(c => c.MyDbSet).Returns(mockDbSet.Object);
+```
+
+Bu tanımlamaları yaptıktan sonra test etmek istediğimiz metodun ait olduğu sınıfın yapıcı metoduna parametre olarak DbContext nesnemizi geçmemiz gerekiyor. DI kullanılıyorsa manuel olarak geçmemize gerek yok. Eğer yapımızı çok fazla değiştirmek istemiyorsanız yapıcı metoda parametre geçmek biraz daha kolay olacaktır.
