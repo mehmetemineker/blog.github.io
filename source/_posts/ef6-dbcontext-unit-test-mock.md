@@ -3,7 +3,7 @@ published: true
 layout: post
 title: EF6 DbContext Unit Test Mock
 date: '2020-06-24 08:55:00 -0500'
-thumbnail: /gallery/thumbnails/unit-testing.jpg
+thumbnail: /gallery/thumbnails/unit-test.jpg
 categories:   
 - .Net
 - 'C#'
