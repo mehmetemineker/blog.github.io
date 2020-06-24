@@ -1,5 +1,19 @@
-## EF6 DbContext Unit Test Mock
-
+---
+published: true
+layout: post
+title: EF6 DbContext Unit Test Mock
+date: '2020-06-24 08:55:00 -0500'
+thumbnail: /gallery/thumbnails/chess.jpg
+categories:   
+- .Net
+- 'C#'
+- 'Unit Test'
+tags: 
+- unittest
+- mock
+- dbcontext
+- ef6
+---
 Merhaba, çok uzun zamandır bir şeyler yazmıyordum. Tam anlamıyla bir yazı olmasa da bir başlangıç yapmak adına bu küçük paylaşımı yapmak istedim. Bu paylaşımımda EF6 DbContext Mock işlemi için hazırladığım kodu göreceksiniz.
 <!--more-->
 Bilindiği üzere unit test yazmanın en önemli ve en sıkıntılı noktalarından birisi mocklama işlemi. DbContext sınıfınız eğer test edilebilir olarak geliştirilmediyse bu süreç can sıkıcı olabiliyor. Var olan yapınızı da değiştirmek ürkütücü geliyorsa, paylaşmış olduğum kodlar ile çok fazla değişiklik yapmadan DbContext nesnemizi mocklayarak test edilebilir hale getirebilirsiniz.
