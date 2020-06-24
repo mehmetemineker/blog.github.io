@@ -60,3 +60,6 @@ mockDbContext.Setup(c => c.MyDbSet).Returns(mockDbSet.Object);
 ```
 
 Bu tanımlamaları yaptıktan sonra test etmek istediğimiz metodun ait olduğu sınıfın yapıcı metoduna parametre olarak DbContext nesnemizi geçmemiz gerekiyor. DI kullanılıyorsa manuel olarak geçmemize gerek yok. Eğer yapımızı çok fazla değiştirmek istemiyorsanız yapıcı metoda parametre geçmek biraz daha kolay olacaktır.
+
+**Kaynak**
+https://docs.microsoft.com/tr-tr/ef/ef6/fundamentals/testing/mocking
