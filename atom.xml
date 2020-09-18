@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Mehmet Emin Eker</title>
+  <icon>https://www.mehmetemineker.com/icon.png</icon>
+  <subtitle>Software Developer at Doğuş Teknoloji</subtitle>
+  <link href="https://www.mehmetemineker.com/atom.xml" rel="self"/>
+  
+  <link href="https://www.mehmetemineker.com/"/>
+  <updated>2020-09-18T20:50:17.272Z</updated>
+  <id>https://www.mehmetemineker.com/</id>
+  
+  <author>
+    <name>Mehmet Emin Eker</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>EF6 DbContext Unit Test Mock</title>
+    <link href="https://www.mehmetemineker.com/ef6-dbcontext-unit-test-mock/"/>
+    <id>https://www.mehmetemineker.com/ef6-dbcontext-unit-test-mock/</id>
+    <published>2020-06-24T10:55:00.000Z</published>
+    <updated>2020-09-18T20:50:17.272Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Merhaba, çok uzun zamandır bir şeyler yazmıyordum. Tam anlamıyla bir yazı olmasa da bir başlangıç yapmak adına bu küçük paylaşımı yapmak istedim. Bu paylaşımımda EF6 DbContext Mock işlemi için hazırladığım kodu göreceksiniz.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term=".Net" scheme="https://www.mehmetemineker.com/categories/Net/"/>
+    
+    <category term="C#" scheme="https://www.mehmetemineker.com/categories/Net/C/"/>
+    
+    <category term="Unit Test" scheme="https://www.mehmetemineker.com/categories/Net/C/Unit-Test/"/>
+    
+    
+    <category term="unittest" scheme="https://www.mehmetemineker.com/tags/unittest/"/>
+    
+    <category term="mock" scheme="https://www.mehmetemineker.com/tags/mock/"/>
+    
+    <category term="dbcontext" scheme="https://www.mehmetemineker.com/tags/dbcontext/"/>
+    
+    <category term="ef6" scheme="https://www.mehmetemineker.com/tags/ef6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>8 Vezir Probleminin Genetik Algoritma ile Çözümü</title>
+    <link href="https://www.mehmetemineker.com/8-vezir-probleminin-genetik-algoritma-ile-cozumu/"/>
+    <id>https://www.mehmetemineker.com/8-vezir-probleminin-genetik-algoritma-ile-cozumu/</id>
+    <published>2018-06-04T17:27:39.000Z</published>
+    <updated>2020-09-18T20:50:17.268Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Merhaba arkadaşlar, bu yazımda &lt;strong&gt;algoritma severlerin&lt;/strong&gt; mutlaka bildiği &lt;strong&gt;8 vezir problemi&lt;/strong&gt;nin &lt;strong&gt;genetik algoritma&lt;/strong&gt; ile çözümünden bahsedeceğim.&lt;/p&gt;
+&lt;p&gt;Her ne kadar 8 vezir desek de asıl amacımız &lt;strong&gt;n adet vezirin nxn’lik satranç tahtasına uygun bir şekilde yerleştirilmesi&lt;/strong&gt;ni sağlamaktır. Bu yüzden 8 vezir yerine, n vezir problemi demek daha doğru olacaktır.&lt;/p&gt;
+&lt;h4 id=&quot;n-Vezir-Problemi-Amaci&quot;&gt;&lt;a href=&quot;#n-Vezir-Problemi-Amaci&quot; class=&quot;headerlink&quot; title=&quot;n Vezir Problemi Amacı&quot;&gt;&lt;/a&gt;n Vezir Problemi Amacı&lt;/h4&gt;&lt;p&gt;Satranç oynayanlar bilir, bir vezir &lt;strong&gt;yatay&lt;/strong&gt;, &lt;strong&gt;dikey&lt;/strong&gt; ve &lt;strong&gt;çapraz&lt;/strong&gt; hamleler yapabilir. Amacımız n adet veziri,  nxn’lik bir satranç tahtasına birbirini kesmeyecek şekilde yerleştirmek.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Algoritmalar" scheme="https://www.mehmetemineker.com/categories/Algoritmalar/"/>
+    
+    
+    <category term="algoritma" scheme="https://www.mehmetemineker.com/tags/algoritma/"/>
+    
+    <category term="genetik" scheme="https://www.mehmetemineker.com/tags/genetik/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>TypeItJs – Harf Harf Animasyonlu Yazım Kütüphanesi</title>
+    <link href="https://www.mehmetemineker.com/typeitjs-harf-harf-animasyonlu-yazim-kutuphanesi/"/>
+    <id>https://www.mehmetemineker.com/typeitjs-harf-harf-animasyonlu-yazim-kutuphanesi/</id>
+    <published>2018-05-20T17:27:39.000Z</published>
+    <updated>2020-09-18T20:50:17.284Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Az önce internette dolaşırken karşıma çıkan, hoşuma giden webmaster araçlarını, kütüphanelerini, hem unutmamak hem de sizlerle paylaşmak için fazla açıklama yapmadan paylaşmaya karar verdim. Bu kategorinin ilk kütüphanesi TypeItJs. Harf harf animasyonlu yazı yazmamızı sağlayan güzel bir kütüphane.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Webmaster" scheme="https://www.mehmetemineker.com/categories/Webmaster/"/>
+    
+    <category term="Javascript" scheme="https://www.mehmetemineker.com/categories/Webmaster/Javascript/"/>
+    
+    
+    <category term="javascript" scheme="https://www.mehmetemineker.com/tags/javascript/"/>
+    
+    <category term="webmaster" scheme="https://www.mehmetemineker.com/tags/webmaster/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>jQuery Video Extend</title>
+    <link href="https://www.mehmetemineker.com/jquery-video-extend/"/>
+    <id>https://www.mehmetemineker.com/jquery-video-extend/</id>
+    <published>2018-05-20T17:27:39.000Z</published>
+    <updated>2020-09-18T20:50:17.280Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Videolara logo ve duraklama noktaları ekleyebileceğiniz, youtube üzerinden veya flv dosyalarında video oynatmamızı sağlayan bir jQuery eklentisi.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Webmaster" scheme="https://www.mehmetemineker.com/categories/Webmaster/"/>
+    
+    <category term="Javascript" scheme="https://www.mehmetemineker.com/categories/Webmaster/Javascript/"/>
+    
+    
+    <category term="javascript" scheme="https://www.mehmetemineker.com/tags/javascript/"/>
+    
+    <category term="jquery" scheme="https://www.mehmetemineker.com/tags/jquery/"/>
+    
+    <category term="webmaster" scheme="https://www.mehmetemineker.com/tags/webmaster/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>EntityFramework AsNoTracking Nedir?</title>
+    <link href="https://www.mehmetemineker.com/entityframework-asnotracking-nedir/"/>
+    <id>https://www.mehmetemineker.com/entityframework-asnotracking-nedir/</id>
+    <published>2018-05-13T17:27:39.000Z</published>
+    <updated>2020-09-18T20:50:17.272Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Merhaba arkadaşlar, bugün .Net Core projem için Generic Repository örneği yapıyordum. Github üzerinden örnek kodlara bakarken Entity sorgularındaki AsNoTracking ifadesini gördüm. Yaklaşık 4 yıldır MVC projelerinde görev alıyorum. AsNoTracking ifadesini şimdiye kadar fark edemediğim için üzüldüm, şimdi bunu keşfettiğim için de mutluyum. 🙂 Sizin de bundan faydalanmanızı istediğim için çok geciktirmeden blogumda paylaşmak istedim.&lt;/p&gt;
+&lt;p&gt;Bildiğiniz üzere EntityFramework ile bir select işlemi yaptığınızda, gelen data içeriğini güncelleyip SaveChanges yaparsak değişiklikler veritabanına yansır. Bu işlemi her zaman istemiyor olabilirsiniz. Bu durumda AsNoTracking ifadesi yardımımıza koşuyor. Bu ifade ile yaptığımız entity sorgusu sadece okumalıktır. Üzerinde değişiklik yapıp SaveChanges yaptığımızda veritabanında hiçbir değişiklik olmaz. Bu da bize minimum bellek kullanımı ve optimum performans sağlayacaktır. Çok hoj 🙂&lt;/p&gt;</summary>
+    
+    
+    
+    <category term=".Net" scheme="https://www.mehmetemineker.com/categories/Net/"/>
+    
+    <category term="C#" scheme="https://www.mehmetemineker.com/categories/Net/C/"/>
+    
+    
+    <category term="entityframework" scheme="https://www.mehmetemineker.com/tags/entityframework/"/>
+    
+    <category term="asnotracking" scheme="https://www.mehmetemineker.com/tags/asnotracking/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Evrimsel Sürecin Simülasyonu – Genetik Algoritmalar – 1</title>
+    <link href="https://www.mehmetemineker.com/evrimsel-surecin-simulasyonu-genetik-algoritmalar-1/"/>
+    <id>https://www.mehmetemineker.com/evrimsel-surecin-simulasyonu-genetik-algoritmalar-1/</id>
+    <published>2018-04-08T17:27:39.000Z</published>
+    <updated>2020-09-18T20:50:17.272Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Selam arkadaşlar, bu makalemde birkaç aydır üzerinde araştırmalar yaptığım genetik algoritmalar hakkında edindiğim bilgileri sizlerle paylaşmak istedim.&lt;/p&gt;
+&lt;p&gt;Genetik algoritamlar konusuna giriş yapmadan önce işi biraz daha temelden alarak “Algoritamanın” ne olduğu konusuna değinmek istiyorum. Bilgisayar bilimleri veya matematik bilimleri ile ilgilensek de ilgilenmesek de aslında algoritmalar hayatımız her yerinde. Günlük hayatımızda bilinçli veya bilinçsiz bir çok algoritmayı yerine getiririz. Bu algoritmalara en güzel örneği “yemek yapmak” eylemini gösterebiliriz. Yemek yaparken izlediğimiz tüm adımlar daha önceden belirlenmiş kurallar çerçevesinde ilerletilir. Bu bağlamda algoritma, en basit tanımıyla, bir problemin çözümünde izlenecek yol anlamına gelir.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Algoritmalar" scheme="https://www.mehmetemineker.com/categories/Algoritmalar/"/>
+    
+    <category term=".Net" scheme="https://www.mehmetemineker.com/categories/Algoritmalar/Net/"/>
+    
+    <category term="C#" scheme="https://www.mehmetemineker.com/categories/Algoritmalar/Net/C/"/>
+    
+    
+    <category term="algoritma" scheme="https://www.mehmetemineker.com/tags/algoritma/"/>
+    
+    <category term="genetik" scheme="https://www.mehmetemineker.com/tags/genetik/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Oracle Query – Get Version</title>
+    <link href="https://www.mehmetemineker.com/oracle-get-version-query/"/>
+    <id>https://www.mehmetemineker.com/oracle-get-version-query/</id>
+    <published>2018-01-22T17:27:39.000Z</published>
+    <updated>2020-09-18T20:50:17.280Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Oracle veritabanında hangi sürümün kullanıldığını merak ettim ve bunu buldum:&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Veritabanı" scheme="https://www.mehmetemineker.com/categories/Veritabani/"/>
+    
+    <category term="Oracle" scheme="https://www.mehmetemineker.com/categories/Veritabani/Oracle/"/>
+    
+    
+    <category term="sql" scheme="https://www.mehmetemineker.com/tags/sql/"/>
+    
+    <category term="oracle" scheme="https://www.mehmetemineker.com/tags/oracle/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Geliştiriciler İçin Offline Dokümantasyon – Zeal</title>
+    <link href="https://www.mehmetemineker.com/gelistiriciler-icin-offline-dokumantasyon-zeal/"/>
+    <id>https://www.mehmetemineker.com/gelistiriciler-icin-offline-dokumantasyon-zeal/</id>
+    <published>2017-06-19T17:27:39.000Z</published>
+    <updated>2020-09-18T20:50:17.272Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://zealdocs.org/&quot;&gt;Zeal – Offline Documentation Browser&lt;/a&gt; programı ile offline olarak dokümantasyon ihtiyacınızı giderebilirsiniz.&lt;/p&gt;
+&lt;p&gt;Zeal, şuan 195 yazılım teknolojisinin dokümantasyonunu offline olarak sunmakta. İsterseniz masaüstü uygulamasını indirmek yerine kullandığınız IDE üzerine plugin olarak ekleme şansınız da var.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Tavsiye Programlar" scheme="https://www.mehmetemineker.com/categories/Tavsiye-Programlar/"/>
+    
+    
+    <category term="svn" scheme="https://www.mehmetemineker.com/tags/svn/"/>
+    
+    <category term="visualstudio" scheme="https://www.mehmetemineker.com/tags/visualstudio/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Javascript Function All Parameters Is Empty</title>
+    <link href="https://www.mehmetemineker.com/javascript-function-all-parameters-is-empty/"/>
+    <id>https://www.mehmetemineker.com/javascript-function-all-parameters-is-empty/</id>
+    <published>2017-06-18T17:27:39.000Z</published>
+    <updated>2020-09-18T20:50:17.280Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Bir fonksiyondaki parametrelerin hiçbiri girilmediyse bunun kontrolünü ES ile halledebiliriz.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Javascript" scheme="https://www.mehmetemineker.com/categories/Javascript/"/>
+    
+    
+    <category term="mssql" scheme="https://www.mehmetemineker.com/tags/mssql/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Javascript Function Parameter Set Default Value</title>
+    <link href="https://www.mehmetemineker.com/javascript-function-parameter-set-default-value/"/>
+    <id>https://www.mehmetemineker.com/javascript-function-parameter-set-default-value/</id>
+    <published>2017-06-18T17:27:39.000Z</published>
+    <updated>2020-09-18T20:50:17.280Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Bir fonksiyonun parametresine varsayılan değeri aşağıdaki gibi atıyoruz.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Javascript" scheme="https://www.mehmetemineker.com/categories/Javascript/"/>
+    
+    
+    <category term="javascript" scheme="https://www.mehmetemineker.com/tags/javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Javascript Self Invoking Functions</title>
+    <link href="https://www.mehmetemineker.com/javascript-self-invoking-functions/"/>
+    <id>https://www.mehmetemineker.com/javascript-self-invoking-functions/</id>
+    <published>2017-06-18T17:27:39.000Z</published>
+    <updated>2020-09-18T20:50:17.280Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Javascript ile oluşturduğumuz bir fonksiyonu otomatik olarak çağırma.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Javascript" scheme="https://www.mehmetemineker.com/categories/Javascript/"/>
+    
+    
+    <category term="javascript" scheme="https://www.mehmetemineker.com/tags/javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Sql Execution Timing</title>
+    <link href="https://www.mehmetemineker.com/sql-execution-timing/"/>
+    <id>https://www.mehmetemineker.com/sql-execution-timing/</id>
+    <published>2017-06-18T17:27:39.000Z</published>
+    <updated>2020-09-18T20:50:17.284Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;MSSQL 2008 ve üzeri sorgu süresini hesaplama&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="SQL Server" scheme="https://www.mehmetemineker.com/categories/SQL-Server/"/>
+    
+    <category term="Veritabanı" scheme="https://www.mehmetemineker.com/categories/SQL-Server/Veritabani/"/>
+    
+    
+    <category term="mssql" scheme="https://www.mehmetemineker.com/tags/mssql/"/>
+    
+    <category term="database" scheme="https://www.mehmetemineker.com/tags/database/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Jquery Only Parent Click</title>
+    <link href="https://www.mehmetemineker.com/jquery-only-parent-click/"/>
+    <id>https://www.mehmetemineker.com/jquery-only-parent-click/</id>
+    <published>2017-06-18T17:22:39.000Z</published>
+    <updated>2020-09-18T20:50:17.280Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Jquery ile sadece parent elemente tıklama eventı ekleme.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Javascript" scheme="https://www.mehmetemineker.com/categories/Javascript/"/>
+    
+    <category term="JQuery" scheme="https://www.mehmetemineker.com/categories/Javascript/JQuery/"/>
+    
+    
+    <category term="javascript" scheme="https://www.mehmetemineker.com/tags/javascript/"/>
+    
+    <category term="jquery" scheme="https://www.mehmetemineker.com/tags/jquery/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SQL Trigger Toplu Update Sorunu</title>
+    <link href="https://www.mehmetemineker.com/sql-trigger-toplu-update-sorunu/"/>
+    <id>https://www.mehmetemineker.com/sql-trigger-toplu-update-sorunu/</id>
+    <published>2017-06-17T17:27:39.000Z</published>
+    <updated>2020-09-18T20:50:17.284Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Bazen triggerlarda where kullandığımız sorgular varsa, bu sorgular toplu update işlemi sırasında hata oluşturuyor. Where yerine Join</summary>
+        
+      
+    
+    
+    
+    <category term="SQL Server" scheme="https://www.mehmetemineker.com/categories/SQL-Server/"/>
+    
+    <category term="Veritabanı" scheme="https://www.mehmetemineker.com/categories/SQL-Server/Veritabani/"/>
+    
+    
+    <category term="mssql" scheme="https://www.mehmetemineker.com/tags/mssql/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Stored Procedures and Tables Last Modify Date</title>
+    <link href="https://www.mehmetemineker.com/stored-procedures-and-tables-last-modify-date/"/>
+    <id>https://www.mehmetemineker.com/stored-procedures-and-tables-last-modify-date/</id>
+    <published>2017-06-17T17:27:39.000Z</published>
+    <updated>2020-09-18T20:50:17.284Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;MSSQL &lt;strong&gt;sys.objects&lt;/strong&gt; tablosundan üzerinde değişiklik yapılma tarihlerine göre &lt;strong&gt;tabloları&lt;/strong&gt; ve &lt;strong&gt;stored proceduresleri&lt;/strong&gt; listeleme sorgusu. &lt;strong&gt;U&lt;/strong&gt; ile ifade edilenler tablo, &lt;strong&gt;P&lt;/strong&gt; ile ifade edilenler ise SP.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="SQL Server" scheme="https://www.mehmetemineker.com/categories/SQL-Server/"/>
+    
+    <category term="Veritabanı" scheme="https://www.mehmetemineker.com/categories/SQL-Server/Veritabani/"/>
+    
+    
+    <category term="sql" scheme="https://www.mehmetemineker.com/tags/sql/"/>
+    
+    <category term="storedprocedures" scheme="https://www.mehmetemineker.com/tags/storedprocedures/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SQL – Update İle Daha Performanslı İşlem Yapma</title>
+    <link href="https://www.mehmetemineker.com/sql-update-ile-daha-performansli-islem-yapma/"/>
+    <id>https://www.mehmetemineker.com/sql-update-ile-daha-performansli-islem-yapma/</id>
+    <published>2017-06-17T17:27:39.000Z</published>
+    <updated>2020-09-18T20:50:17.284Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Bir sorgu içerisinde herhangi bir kolunun değerini bir fonksiyon ile düzenleyip basarsak performans kaybı olur. Ancak ilk olarak kolona varsayılan değerini basıp daha sonra toplu bir update çekersek gözle görülür performans artışı olur.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Veritabanı" scheme="https://www.mehmetemineker.com/categories/Veritabani/"/>
+    
+    <category term="SQL Server" scheme="https://www.mehmetemineker.com/categories/Veritabani/SQL-Server/"/>
+    
+    
+    <category term="sql" scheme="https://www.mehmetemineker.com/tags/sql/"/>
+    
+    <category term="update" scheme="https://www.mehmetemineker.com/tags/update/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SQL Create Temp Table Declare</title>
+    <link href="https://www.mehmetemineker.com/sql-create-temp-table-declare/"/>
+    <id>https://www.mehmetemineker.com/sql-create-temp-table-declare/</id>
+    <published>2017-06-17T17:27:39.000Z</published>
+    <updated>2020-09-18T20:50:17.284Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Temp tablo oluşturmak için bir yöntem.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Veritabanı" scheme="https://www.mehmetemineker.com/categories/Veritabani/"/>
+    
+    
+    <category term="mssql" scheme="https://www.mehmetemineker.com/tags/mssql/"/>
+    
+    <category term="sql" scheme="https://www.mehmetemineker.com/tags/sql/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SQL Bir Tablonun Aynısını Oluşturma</title>
+    <link href="https://www.mehmetemineker.com/sql-bir-tablonun-aynisini-olusturma/"/>
+    <id>https://www.mehmetemineker.com/sql-bir-tablonun-aynisini-olusturma/</id>
+    <published>2017-06-17T17:27:39.000Z</published>
+    <updated>2020-09-18T20:50:17.284Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Bir tablonun aynı kolonlara sahip bir kopyasını oluşturmak istersek yazmamız gereken sorgu şu şekilde:&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="SQL Server" scheme="https://www.mehmetemineker.com/categories/SQL-Server/"/>
+    
+    <category term="Veritabanı" scheme="https://www.mehmetemineker.com/categories/SQL-Server/Veritabani/"/>
+    
+    
+    <category term="mssql" scheme="https://www.mehmetemineker.com/tags/mssql/"/>
+    
+    <category term="database" scheme="https://www.mehmetemineker.com/tags/database/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C# ToUpper ve ToLower Türkçe Karakter Sorunu</title>
+    <link href="https://www.mehmetemineker.com/c-toupper-ve-tolower-turkce-karakter-sorunu/"/>
+    <id>https://www.mehmetemineker.com/c-toupper-ve-tolower-turkce-karakter-sorunu/</id>
+    <published>2017-06-17T17:27:39.000Z</published>
+    <updated>2020-09-18T20:50:17.268Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;ToUpper ve ToLower kullandığınızda Türkçe karakterlerde sıkıntı yaşattığını gördüyseniz doğru yerdesiniz. CultureInfo ile bu sorunu giderebiliriz.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term=".Net" scheme="https://www.mehmetemineker.com/categories/Net/"/>
+    
+    <category term="C#" scheme="https://www.mehmetemineker.com/categories/Net/C/"/>
+    
+    
+    <category term="solid" scheme="https://www.mehmetemineker.com/tags/solid/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ASP.Net MVC Stars Rating Helper</title>
+    <link href="https://www.mehmetemineker.com/asp-net-mvc-stars-rating-helper/"/>
+    <id>https://www.mehmetemineker.com/asp-net-mvc-stars-rating-helper/</id>
+    <published>2017-05-24T17:27:39.000Z</published>
+    <updated>2020-09-18T20:50:17.268Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Geliştirmiş olduğum stars rating helperı. Açık kaynak olarak Github repomdan bakabilirsiniz.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term=".Net" scheme="https://www.mehmetemineker.com/categories/Net/"/>
+    
+    <category term="C#" scheme="https://www.mehmetemineker.com/categories/Net/C/"/>
+    
+    <category term="Javascript" scheme="https://www.mehmetemineker.com/categories/Net/C/Javascript/"/>
+    
+    <category term="JQuery" scheme="https://www.mehmetemineker.com/categories/Net/C/Javascript/JQuery/"/>
+    
+    <category term="Open Source" scheme="https://www.mehmetemineker.com/categories/Net/C/Javascript/JQuery/Open-Source/"/>
+    
+    
+    <category term="rating" scheme="https://www.mehmetemineker.com/tags/rating/"/>
+    
+    <category term="helper" scheme="https://www.mehmetemineker.com/tags/helper/"/>
+    
+  </entry>
+  
+</feed>
