@@ -117,7 +117,7 @@ widgets:
                 url: 'https://www.linkedin.com/in/mehmetemineker/'
             RSS:
                 icon: fas fa-rss
-                url: /
+                url: /atom.xml
     -
         # Widget name
         type: toc
