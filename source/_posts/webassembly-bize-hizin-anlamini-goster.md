@@ -42,22 +42,22 @@ WASM’dan önce Google’ın Native Client’ı ve Mozilla’nın da asm.js isi
 
 Aşağıdaki görselde yine aynı face detection uygulamasının WASM, asm.js ve Javascript kıyaslaması yapılmaktadır. FPS değerlerine bakıldığında WASM çok daha performanslı bir şekilde görüntü işlemesi gerçekleştirebilmektedir.
 
-{% image5.png %}
+{% image2.png %}
 
 ## WebAssembly Nasıl Çalışır?
 WASM, yaratıcılarının deyimiyle bir "derleme hedefi" dir. Doğrudan WebAssembly yazmamıza gerek yoktur. Seçtiğimiz yüksek seviyeli dilde yazarız ve daha sonra WASM bayt kodu olarak derlenir. Bayt kod daha sonra client üzerinde çalıştırılır ve burada yerel makine koduna çevrilir ve yüksek hızda yürütülür.
 
-{% image5.png %}
+{% image4.png %}
 
 WASM herhangi bir özel makine için tasarlanmadığı için tam anlamıyla bir assembly dili değildir. Tarayıcılar içindir ve tarayıcıda yürütülecek kodu teslim ederken, kodunuzun ne tür makinelerde çalışacağını bilemeyiz. Tarayıcı WASM kodunu indirdiğinde, kodu hızla herhangi bir makinenin anlayabileceği bir dile dönüştürür.
 
-{% image5.png %}
+{% image9.png %}
 
 C, C++ veya Rust ile yazdığımız kodlar WASM metin formatı olan .wat dosyalarına dönüştürülür. Tarayıcıya ise bu dosyanın binary hali olan .wasm dosyası sunulmaktadır. 
 
 Örneğin, aşağıdaki kod parçasında C++ ile faktöriyel hesaplaması yapan recursive bir fonksiyonu .wat ve .wasm formatına dönüştürülmüş halini görebilirsiniz. Binary olan .wasm, text olan ise .wat dosyasına aittir. .wasm ve .wat dosyalarını herhangi bir WasmExplorer aracılığıyla elde edebilirsiniz.
 
-{% image5.png %}
+{% image8.png %}
 
 Ayrıca, Emscripten kullanarak da derleme yapabilirsiniz. Emscripten, hıza, boyuta ve Web platformuna özel odaklanan, LLVM kullanan, WASM için eksiksiz bir derleyici toolchain’dir. 
 
@@ -65,16 +65,16 @@ Emscripten kurulumunu yaptıktan sonra aşağıdaki basit CLI komutu ile C ile y
 
 > emcc hello.c -s WASM=1 -o hello.html
 
-{% image5.png %}
+{% image1.png %}
 
 ## Gerçek Dünyadan Güzel Bir Örnek
 Bir çoğumuzun bildiği sanal seyahat imkanı sunan Google Earth, Haziran 2019’daki Medium yazısına (Preview Google Earth on web across browsers) göre WASM ile beta sürümünü yayınladı. Google Earth, önceki versiyonunda NaCI kullanıldığı için, sadece Chrome tarayıcılarda kullanılabiliyordu, artık sadece Chrome’da değil Opera, Edge ve Firefox tarayıcılarda da kullanılabilir hale getirildi. Safari tarayıcısında da desteklenmesi için çalışmalar hala devam etmektedir. 
 
-{% image5.png %}
+{% image3.png %}
 
 Aşağıdaki görselde göreceğiniz üzere Google Earth Web uygulamasını tarayıcımızda açtığımızda yüklenen dosyalar arasında .wasm dosyasını da görebilirsiniz.
 
-{% image5.png %}
+{% image7.png %}
 
 ## Son Birkaç Söz
 WebAssembly ile C, C++ ve Rust dillerinin dışında diğer popüler dillerle de geliştirme yapmak mümkün. Örneğin; 
