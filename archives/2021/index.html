@@ -7,22 +7,16 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>Stored Procedures and Tables Last Modify Date - Mehmet Emin Eker</title>
+<title>Arşivler: 2021 - Mehmet Emin Eker</title>
 
 
-    <meta name="description" content="MSSQL sys.objects tablosundan üzerinde değişiklik yapılma tarihlerine göre tabloları ve stored proceduresleri listeleme sorgusu. U ile ifade edilenler tablo, P ile ifade edilenler ise SP.">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Stored Procedures and Tables Last Modify Date">
-<meta property="og:url" content="https://www.mehmetemineker.com/stored-procedures-and-tables-last-modify-date/index.html">
+    <meta property="og:type" content="website">
+<meta property="og:title" content="Mehmet Emin Eker">
+<meta property="og:url" content="https://www.mehmetemineker.com/archives/2021/index.html">
 <meta property="og:site_name" content="Mehmet Emin Eker">
-<meta property="og:description" content="MSSQL sys.objects tablosundan üzerinde değişiklik yapılma tarihlerine göre tabloları ve stored proceduresleri listeleme sorgusu. U ile ifade edilenler tablo, P ile ifade edilenler ise SP.">
 <meta property="og:locale" content="tr_TR">
 <meta property="og:image" content="https://www.mehmetemineker.com/images/og_image.png">
-<meta property="article:published_time" content="2017-06-17T17:27:39.000Z">
-<meta property="article:modified_time" content="2021-01-11T07:00:39.629Z">
 <meta property="article:author" content="Mehmet Emin Eker">
-<meta property="article:tag" content="sql">
-<meta property="article:tag" content="storedprocedures">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://www.mehmetemineker.com/images/og_image.png">
 
@@ -133,75 +127,30 @@
         <div class="container">
             <div class="columns">
                 <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
-<div class="card">
-    
-    <div class="card-content article ">
+
+<div class="card widget">
+    <div class="card-content">
+        <h3 class="tag is-link">
+        2021
+        </h3>
+        <div class="timeline">
         
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2017-06-17T17:27:39.000Z">17.06.2017</time>
+            <article class="media">
                 
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/SQL-Server/">SQL Server</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/SQL-Server/Veritabani/">Veritabanı</a>
+                <div class="media-content">
+                    <div class="content">
+                        <time class="has-text-grey is-size-7 is-block is-uppercase" datetime="2021-01-11T07:00:39.629Z">11.01.2021</time>
+                        <a href="/webassembly-bize-hizin-anlamini-goster/" class="title has-link-black-ter is-size-6 has-text-weight-normal">webassembly-bize-hizin-anlamini-goster</a>
+                        <div class="level article-meta is-mobile">
+                            <div class="level-left">
+                                
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                
-                
-                
-            </div>
+            </article>
+        
         </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                Stored Procedures and Tables Last Modify Date
-            
-        </h1>
-        <div class="content">
-            <p>MSSQL <strong>sys.objects</strong> tablosundan üzerinde değişiklik yapılma tarihlerine göre <strong>tabloları</strong> ve <strong>stored proceduresleri</strong> listeleme sorgusu. <strong>U</strong> ile ifade edilenler tablo, <strong>P</strong> ile ifade edilenler ise SP.</p>
-<a id="more"></a>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">name</span>, create_date, modify_date, <span class="keyword">type</span></span><br><span class="line"><span class="keyword">FROM</span> sys.objects</span><br><span class="line"><span class="keyword">WHERE</span> <span class="keyword">type</span> = <span class="string">'U'</span> <span class="keyword">OR</span> <span class="keyword">type</span> = <span class="string">'P'</span></span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span> modify_date <span class="keyword">DESC</span></span><br></pre></td></tr></table></figure>
-        </div>
-        
-        <div class="level is-size-7 is-uppercase">
-            <div class="level-start">
-                <div class="level-item">
-                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
-                    <a class="has-link-grey -link" href="/tags/sql/" rel="tag">sql</a>, <a class="has-link-grey -link" href="/tags/storedprocedures/" rel="tag">storedprocedures</a>
-                </div>
-            </div>
-        </div>
-        
-        
-        
-        
-<div class="sharethis-inline-share-buttons"></div>
-<script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5e1b71d5e63bc1001173279f&amp;product=inline-share-buttons&amp;cms=sop' async='async'></script>
-
-        
-    </div>
-</div>
-
-
-
-
-
-<div class="card card-transparent">
-    <div class="level post-navigation is-flex-wrap is-mobile">
-        
-        <div class="level-start">
-            <a class="level level-item has-link-grey  article-nav-prev" href="/sql-update-ile-daha-performansli-islem-yapma/">
-                <i class="level-item fas fa-chevron-left"></i>
-                <span class="level-item">SQL – Update İle Daha Performanslı İşlem Yapma</span>
-            </a>
-        </div>
-        
-        
-        <div class="level-end">
-            <a class="level level-item has-link-grey  article-nav-next" href="/sql-bir-tablonun-aynisini-olusturma/">
-                <span class="level-item">SQL Bir Tablonun Aynısını Oluşturma</span>
-                <i class="level-item fas fa-chevron-right"></i>
-            </a>
-        </div>
-        
     </div>
 </div>
 
