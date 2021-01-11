@@ -33,7 +33,7 @@ Yine bahsetmek gerekirse; masaüstü uygulamaların web uygulamalarına göre da
 
 {% asset_img image10.png %}
 
-WASM'dan önce Google'ın Native Client'ı ve Mozilla'nın da asm.js isimli teknolojileri ile native performansı sağlanmaktaydı. Tabii doğal olarak Google'ın odak noktası Chrome ve Mozilla'nınki ise Firefox'tu. Öncelikli olarak kendi tarayıcılarında çalışacak bir sistem geliştirmişlerdi. Bunlara kısaca değinmek gerekirse:
+WASM'dan önce Google'ın **Native Client**'ı ve Mozilla'nın da **asm.js** isimli teknolojileri ile native performansı sağlanmaktaydı. Tabii doğal olarak Google'ın odak noktası Chrome ve Mozilla'nınki ise Firefox'tu. Öncelikli olarak kendi tarayıcılarında çalışacak bir sistem geliştirmişlerdi. Bunlara kısaca değinmek gerekirse:
 
 - Google, native kodu bir web tarayıcısında güvenli bir şekilde çalıştırmak amacıyla Native Client'ı (NaCl) geliştirmiştir. Yürütülebilir kod sanal bir alanda çalışır ve native kod yürütmenin performans avantajlarını sunabilmektedir. NaCl, belirli bir mimariye bağlıyken, Portable Native Client (PNaCl), herhangi bir platformda çalışmak üzere geliştirilmiş, NaCl'nin mimariden bağımsız bir versiyonudur. 
 
@@ -56,11 +56,11 @@ WASM herhangi bir özel makine için tasarlanmadığı için tam anlamıyla bir 
 
 C, C++ veya Rust ile yazdığımız kodlar WASM metin formatı olan .wat dosyalarına dönüştürülür. Tarayıcıya ise bu dosyanın binary hali olan .wasm dosyası sunulmaktadır. 
 
-Örneğin, aşağıdaki kod parçasında C++ ile faktöriyel hesaplaması yapan recursive bir fonksiyonu .wat ve .wasm formatına dönüştürülmüş halini görebilirsiniz. Binary olan .wasm, text olan ise .wat dosyasına aittir. .wasm ve .wat dosyalarını herhangi bir WasmExplorer aracılığıyla elde edebilirsiniz.
+Örneğin, aşağıdaki kod parçasında C++ ile faktöriyel hesaplaması yapan recursive bir fonksiyonu .wat ve .wasm formatına dönüştürülmüş halini görebilirsiniz. Binary olan .wasm, text olan ise .wat dosyasına aittir. .wasm ve .wat dosyalarını herhangi bir [WasmExplorer](https://mbebenita.github.io/WasmExplorer/) aracılığıyla elde edebilirsiniz.
 
 {% asset_img image8.png %}
 
-Ayrıca, Emscripten kullanarak da derleme yapabilirsiniz. Emscripten, hıza, boyuta ve Web platformuna özel odaklanan, LLVM kullanan, WASM için eksiksiz bir derleyici toolchain'dir. 
+Ayrıca, [Emscripten](https://emscripten.org/) kullanarak da derleme yapabilirsiniz. Emscripten, hıza, boyuta ve Web platformuna özel odaklanan, [LLVM](https://llvm.org/) kullanan, WASM için eksiksiz bir derleyici toolchain'dir. 
 
 Emscripten kurulumunu yaptıktan sonra aşağıdaki basit CLI komutu ile C ile yazdığınız kodu WASM dosyasına dönüştürerek tarayıcı üzerinden kullanılabilir hale getirebilirsiniz.
 
@@ -69,7 +69,7 @@ Emscripten kurulumunu yaptıktan sonra aşağıdaki basit CLI komutu ile C ile y
 {% asset_img image1.png %}
 
 ## Gerçek Dünyadan Güzel Bir Örnek
-Bir çoğumuzun bildiği sanal seyahat imkanı sunan Google Earth, Haziran 2019'daki Medium yazısına (Preview Google Earth on web across browsers) göre WASM ile beta sürümünü yayınladı. Google Earth, önceki versiyonunda NaCI kullanıldığı için, sadece Chrome tarayıcılarda kullanılabiliyordu, artık sadece Chrome'da değil Opera, Edge ve Firefox tarayıcılarda da kullanılabilir hale getirildi. Safari tarayıcısında da desteklenmesi için çalışmalar hala devam etmektedir. 
+Bir çoğumuzun bildiği sanal seyahat imkanı sunan Google Earth, Haziran 2019'daki Medium yazısına ([Preview Google Earth on web across browsers](https://medium.com/google-earth/preview-google-earth-on-web-across-browsers-2625297e1d3c)) göre WASM ile beta sürümünü yayınladı. Google Earth, önceki versiyonunda NaCI kullanıldığı için, sadece Chrome tarayıcılarda kullanılabiliyordu, artık sadece Chrome'da değil Opera, Edge ve Firefox tarayıcılarda da kullanılabilir hale getirildi. Safari tarayıcısında da desteklenmesi için çalışmalar hala devam etmektedir. 
 
 {% asset_img image3.png %}
 
