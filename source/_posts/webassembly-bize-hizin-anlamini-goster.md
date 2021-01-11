@@ -15,7 +15,7 @@ WebAssembly, kısaca WASM ile web tarayıcılarda C,C++ ve Rust gibi yüksek sev
 
 <!--more-->
 
-> Run Shadowfax WebAssembly, show us the meaning of haste. Gandalf
+> Run ~~Shadowfax~~ WebAssembly, show us the meaning of haste. Gandalf
 
 ## WebAssembly
 WebAssembly, kısaca WASM ile web tarayıcılarda C,C++ ve Rust gibi yüksek seviyeli diller ile yazılımış programları derleyebilir, çalıştırabilir ve taşıyabiliriz. Javascript'in performans olarak yetersiz kaldığı noktalarda WASM ile 20 kat daha performanslı işler yapabiliriz.
