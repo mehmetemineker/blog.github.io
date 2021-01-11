@@ -6,7 +6,7 @@
   <link href="https://www.mehmetemineker.com/atom.xml" rel="self"/>
   
   <link href="https://www.mehmetemineker.com/"/>
-  <updated>2021-01-11T07:57:41.477Z</updated>
+  <updated>2021-01-11T07:59:45.579Z</updated>
   <id>https://www.mehmetemineker.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://www.mehmetemineker.com/webassembly-bize-hizin-anlamini-goster/"/>
     <id>https://www.mehmetemineker.com/webassembly-bize-hizin-anlamini-goster/</id>
     <published>2021-01-11T14:00:00.000Z</published>
-    <updated>2021-01-11T07:57:41.477Z</updated>
+    <updated>2021-01-11T07:59:45.579Z</updated>
     
     
     <summary type="html">&lt;p&gt;WebAssembly, kısaca WASM ile web tarayıcılarda C,C++ ve Rust gibi yüksek seviyeli diller ile yazılımış programları derleyebilir, çalıştırabilir ve taşıyabiliriz. Javascript’in performans olarak yetersiz kaldığı noktalarda WASM ile 20 kat daha performanslı işler yapabiliriz.&lt;/p&gt;</summary>
@@ -44,7 +44,7 @@
     <link href="https://www.mehmetemineker.com/ef6-dbcontext-unit-test-mock/"/>
     <id>https://www.mehmetemineker.com/ef6-dbcontext-unit-test-mock/</id>
     <published>2020-06-24T10:55:00.000Z</published>
-    <updated>2021-01-11T07:57:41.469Z</updated>
+    <updated>2021-01-11T07:59:45.523Z</updated>
     
     
     <summary type="html">&lt;p&gt;Merhaba, çok uzun zamandır bir şeyler yazmıyordum. Tam anlamıyla bir yazı olmasa da bir başlangıç yapmak adına bu küçük paylaşımı yapmak istedim. Bu paylaşımımda EF6 DbContext Mock işlemi için hazırladığım kodu göreceksiniz.&lt;/p&gt;</summary>
@@ -73,7 +73,7 @@
     <link href="https://www.mehmetemineker.com/8-vezir-probleminin-genetik-algoritma-ile-cozumu/"/>
     <id>https://www.mehmetemineker.com/8-vezir-probleminin-genetik-algoritma-ile-cozumu/</id>
     <published>2018-06-04T17:27:39.000Z</published>
-    <updated>2021-01-11T07:57:41.465Z</updated>
+    <updated>2021-01-11T07:59:45.519Z</updated>
     
     
     <summary type="html">&lt;p&gt;Merhaba arkadaşlar, bu yazımda &lt;strong&gt;algoritma severlerin&lt;/strong&gt; mutlaka bildiği &lt;strong&gt;8 vezir problemi&lt;/strong&gt;nin &lt;strong&gt;genetik algoritma&lt;/strong&gt; ile çözümünden bahsedeceğim.&lt;/p&gt;
@@ -96,7 +96,7 @@
     <link href="https://www.mehmetemineker.com/jquery-video-extend/"/>
     <id>https://www.mehmetemineker.com/jquery-video-extend/</id>
     <published>2018-05-20T17:27:39.000Z</published>
-    <updated>2021-01-11T07:57:41.477Z</updated>
+    <updated>2021-01-11T07:59:45.531Z</updated>
     
     
     <summary type="html">&lt;p&gt;Videolara logo ve duraklama noktaları ekleyebileceğiniz, youtube üzerinden veya flv dosyalarında video oynatmamızı sağlayan bir jQuery eklentisi.&lt;/p&gt;</summary>
@@ -121,7 +121,7 @@
     <link href="https://www.mehmetemineker.com/typeitjs-harf-harf-animasyonlu-yazim-kutuphanesi/"/>
     <id>https://www.mehmetemineker.com/typeitjs-harf-harf-animasyonlu-yazim-kutuphanesi/</id>
     <published>2018-05-20T17:27:39.000Z</published>
-    <updated>2021-01-11T07:57:41.477Z</updated>
+    <updated>2021-01-11T07:59:45.535Z</updated>
     
     
     <summary type="html">&lt;p&gt;Az önce internette dolaşırken karşıma çıkan, hoşuma giden webmaster araçlarını, kütüphanelerini, hem unutmamak hem de sizlerle paylaşmak için fazla açıklama yapmadan paylaşmaya karar verdim. Bu kategorinin ilk kütüphanesi TypeItJs. Harf harf animasyonlu yazı yazmamızı sağlayan güzel bir kütüphane.&lt;/p&gt;</summary>
@@ -144,7 +144,7 @@
     <link href="https://www.mehmetemineker.com/entityframework-asnotracking-nedir/"/>
     <id>https://www.mehmetemineker.com/entityframework-asnotracking-nedir/</id>
     <published>2018-05-13T17:27:39.000Z</published>
-    <updated>2021-01-11T07:57:41.469Z</updated>
+    <updated>2021-01-11T07:59:45.523Z</updated>
     
     
     <summary type="html">&lt;p&gt;Merhaba arkadaşlar, bugün .Net Core projem için Generic Repository örneği yapıyordum. Github üzerinden örnek kodlara bakarken Entity sorgularındaki AsNoTracking ifadesini gördüm. Yaklaşık 4 yıldır MVC projelerinde görev alıyorum. AsNoTracking ifadesini şimdiye kadar fark edemediğim için üzüldüm, şimdi bunu keşfettiğim için de mutluyum. 🙂 Sizin de bundan faydalanmanızı istediğim için çok geciktirmeden blogumda paylaşmak istedim.&lt;/p&gt;
@@ -168,7 +168,7 @@
     <link href="https://www.mehmetemineker.com/evrimsel-surecin-simulasyonu-genetik-algoritmalar-1/"/>
     <id>https://www.mehmetemineker.com/evrimsel-surecin-simulasyonu-genetik-algoritmalar-1/</id>
     <published>2018-04-08T17:27:39.000Z</published>
-    <updated>2021-01-11T07:57:41.469Z</updated>
+    <updated>2021-01-11T07:59:45.523Z</updated>
     
     
     <summary type="html">&lt;p&gt;Selam arkadaşlar, bu makalemde birkaç aydır üzerinde araştırmalar yaptığım genetik algoritmalar hakkında edindiğim bilgileri sizlerle paylaşmak istedim.&lt;/p&gt;
@@ -194,7 +194,7 @@
     <link href="https://www.mehmetemineker.com/oracle-get-version-query/"/>
     <id>https://www.mehmetemineker.com/oracle-get-version-query/</id>
     <published>2018-01-22T17:27:39.000Z</published>
-    <updated>2021-01-11T07:57:41.477Z</updated>
+    <updated>2021-01-11T07:59:45.535Z</updated>
     
     
     <summary type="html">&lt;p&gt;Oracle veritabanında hangi sürümün kullanıldığını merak ettim ve bunu buldum:&lt;/p&gt;</summary>
@@ -217,7 +217,7 @@
     <link href="https://www.mehmetemineker.com/gelistiriciler-icin-offline-dokumantasyon-zeal/"/>
     <id>https://www.mehmetemineker.com/gelistiriciler-icin-offline-dokumantasyon-zeal/</id>
     <published>2017-06-19T17:27:39.000Z</published>
-    <updated>2021-01-11T07:57:41.469Z</updated>
+    <updated>2021-01-11T07:59:45.523Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://zealdocs.org/&quot;&gt;Zeal – Offline Documentation Browser&lt;/a&gt; programı ile offline olarak dokümantasyon ihtiyacınızı giderebilirsiniz.&lt;/p&gt;
@@ -239,7 +239,7 @@
     <link href="https://www.mehmetemineker.com/javascript-function-parameter-set-default-value/"/>
     <id>https://www.mehmetemineker.com/javascript-function-parameter-set-default-value/</id>
     <published>2017-06-18T17:27:39.000Z</published>
-    <updated>2021-01-11T07:57:41.477Z</updated>
+    <updated>2021-01-11T07:59:45.531Z</updated>
     
     
     <summary type="html">&lt;p&gt;Bir fonksiyonun parametresine varsayılan değeri aşağıdaki gibi atıyoruz.&lt;/p&gt;</summary>
@@ -258,7 +258,7 @@
     <link href="https://www.mehmetemineker.com/sql-execution-timing/"/>
     <id>https://www.mehmetemineker.com/sql-execution-timing/</id>
     <published>2017-06-18T17:27:39.000Z</published>
-    <updated>2021-01-11T07:57:41.477Z</updated>
+    <updated>2021-01-11T07:59:45.535Z</updated>
     
     
     <summary type="html">&lt;p&gt;MSSQL 2008 ve üzeri sorgu süresini hesaplama&lt;/p&gt;</summary>
@@ -281,7 +281,7 @@
     <link href="https://www.mehmetemineker.com/javascript-function-all-parameters-is-empty/"/>
     <id>https://www.mehmetemineker.com/javascript-function-all-parameters-is-empty/</id>
     <published>2017-06-18T17:27:39.000Z</published>
-    <updated>2021-01-11T07:57:41.477Z</updated>
+    <updated>2021-01-11T07:59:45.531Z</updated>
     
     
     <summary type="html">&lt;p&gt;Bir fonksiyondaki parametrelerin hiçbiri girilmediyse bunun kontrolünü ES ile halledebiliriz.&lt;/p&gt;</summary>
@@ -300,7 +300,7 @@
     <link href="https://www.mehmetemineker.com/javascript-self-invoking-functions/"/>
     <id>https://www.mehmetemineker.com/javascript-self-invoking-functions/</id>
     <published>2017-06-18T17:27:39.000Z</published>
-    <updated>2021-01-11T07:57:41.477Z</updated>
+    <updated>2021-01-11T07:59:45.531Z</updated>
     
     
     <summary type="html">&lt;p&gt;Javascript ile oluşturduğumuz bir fonksiyonu otomatik olarak çağırma.&lt;/p&gt;</summary>
@@ -319,7 +319,7 @@
     <link href="https://www.mehmetemineker.com/jquery-only-parent-click/"/>
     <id>https://www.mehmetemineker.com/jquery-only-parent-click/</id>
     <published>2017-06-18T17:22:39.000Z</published>
-    <updated>2021-01-11T07:57:41.477Z</updated>
+    <updated>2021-01-11T07:59:45.531Z</updated>
     
     
     <summary type="html">&lt;p&gt;Jquery ile sadece parent elemente tıklama eventı ekleme.&lt;/p&gt;</summary>
@@ -342,7 +342,7 @@
     <link href="https://www.mehmetemineker.com/c-toupper-ve-tolower-turkce-karakter-sorunu/"/>
     <id>https://www.mehmetemineker.com/c-toupper-ve-tolower-turkce-karakter-sorunu/</id>
     <published>2017-06-17T17:27:39.000Z</published>
-    <updated>2021-01-11T07:57:41.465Z</updated>
+    <updated>2021-01-11T07:59:45.519Z</updated>
     
     
     <summary type="html">&lt;p&gt;ToUpper ve ToLower kullandığınızda Türkçe karakterlerde sıkıntı yaşattığını gördüyseniz doğru yerdesiniz. CultureInfo ile bu sorunu giderebiliriz.&lt;/p&gt;</summary>
@@ -363,7 +363,7 @@
     <link href="https://www.mehmetemineker.com/sql-update-ile-daha-performansli-islem-yapma/"/>
     <id>https://www.mehmetemineker.com/sql-update-ile-daha-performansli-islem-yapma/</id>
     <published>2017-06-17T17:27:39.000Z</published>
-    <updated>2021-01-11T07:57:41.477Z</updated>
+    <updated>2021-01-11T07:59:45.535Z</updated>
     
     
     <summary type="html">&lt;p&gt;Bir sorgu içerisinde herhangi bir kolunun değerini bir fonksiyon ile düzenleyip basarsak performans kaybı olur. Ancak ilk olarak kolona varsayılan değerini basıp daha sonra toplu bir update çekersek gözle görülür performans artışı olur.&lt;/p&gt;</summary>
@@ -386,7 +386,7 @@
     <link href="https://www.mehmetemineker.com/stored-procedures-and-tables-last-modify-date/"/>
     <id>https://www.mehmetemineker.com/stored-procedures-and-tables-last-modify-date/</id>
     <published>2017-06-17T17:27:39.000Z</published>
-    <updated>2021-01-11T07:57:41.477Z</updated>
+    <updated>2021-01-11T07:59:45.535Z</updated>
     
     
     <summary type="html">&lt;p&gt;MSSQL &lt;strong&gt;sys.objects&lt;/strong&gt; tablosundan üzerinde değişiklik yapılma tarihlerine göre &lt;strong&gt;tabloları&lt;/strong&gt; ve &lt;strong&gt;stored proceduresleri&lt;/strong&gt; listeleme sorgusu. &lt;strong&gt;U&lt;/strong&gt; ile ifade edilenler tablo, &lt;strong&gt;P&lt;/strong&gt; ile ifade edilenler ise SP.&lt;/p&gt;</summary>
@@ -409,7 +409,7 @@
     <link href="https://www.mehmetemineker.com/sql-bir-tablonun-aynisini-olusturma/"/>
     <id>https://www.mehmetemineker.com/sql-bir-tablonun-aynisini-olusturma/</id>
     <published>2017-06-17T17:27:39.000Z</published>
-    <updated>2021-01-11T07:57:41.477Z</updated>
+    <updated>2021-01-11T07:59:45.535Z</updated>
     
     
     <summary type="html">&lt;p&gt;Bir tablonun aynı kolonlara sahip bir kopyasını oluşturmak istersek yazmamız gereken sorgu şu şekilde:&lt;/p&gt;</summary>
@@ -432,7 +432,7 @@
     <link href="https://www.mehmetemineker.com/sql-create-temp-table-declare/"/>
     <id>https://www.mehmetemineker.com/sql-create-temp-table-declare/</id>
     <published>2017-06-17T17:27:39.000Z</published>
-    <updated>2021-01-11T07:57:41.477Z</updated>
+    <updated>2021-01-11T07:59:45.535Z</updated>
     
     
     <summary type="html">&lt;p&gt;Temp tablo oluşturmak için bir yöntem.&lt;/p&gt;</summary>
@@ -453,7 +453,7 @@
     <link href="https://www.mehmetemineker.com/sql-trigger-toplu-update-sorunu/"/>
     <id>https://www.mehmetemineker.com/sql-trigger-toplu-update-sorunu/</id>
     <published>2017-06-17T17:27:39.000Z</published>
-    <updated>2021-01-11T07:57:41.477Z</updated>
+    <updated>2021-01-11T07:59:45.535Z</updated>
     
     
       
