@@ -38,5 +38,62 @@ WASM’dan önce Google’ın Native Client’ı ve Mozilla’nın da asm.js isi
 
 - Mozilla ise, asm.js'i 2013'te piyasaya sürdü ve geliştiricilere C veya C++ kaynak kodlarını JavaScript'e çevirmeleri için bir yol sağlamıştır. asm.js, derleyiciler için düşük seviyeli, verimli bir hedef dil olarak kullanılabilen katı bir JavaScript alt kümesi olarak tanımlanmaktadır.
 
+2015 yılında, web standartları geliştirmek için kurulmuş uluslararası bir topluluk olan World Wide Web Consortium’un (W3C) organize etmiş olduğu ve Google, Mozilla, Apple ve Microsoft’un katılımlarıyla gerçekleştirilen WebAssembly Community Group buluşmasıyla WASM’ın temelleri atılmış oldu. Artık navite performansı popüler tarayıcıların hepsinde desteklenir hale gelmiştir. Web tarayıcılarında WASM desteğinin uygulanması asm.js’e ve PNaCl'nin dağıtılmış yürütülebilir dosya konseptine dayanmaktadır.
+
+Aşağıdaki görselde yine aynı face detection uygulamasının WASM, asm.js ve Javascript kıyaslaması yapılmaktadır. FPS değerlerine bakıldığında WASM çok daha performanslı bir şekilde görüntü işlemesi gerçekleştirebilmektedir.
+
+Resim
+
+## WebAssembly Nasıl Çalışır?
+WASM, yaratıcılarının deyimiyle bir "derleme hedefi" dir. Doğrudan WebAssembly yazmamıza gerek yoktur. Seçtiğimiz yüksek seviyeli dilde yazarız ve daha sonra WASM bayt kodu olarak derlenir. Bayt kod daha sonra client üzerinde çalıştırılır ve burada yerel makine koduna çevrilir ve yüksek hızda yürütülür.
+
+Resim
+
+WASM herhangi bir özel makine için tasarlanmadığı için tam anlamıyla bir assembly dili değildir. Tarayıcılar içindir ve tarayıcıda yürütülecek kodu teslim ederken, kodunuzun ne tür makinelerde çalışacağını bilemeyiz. Tarayıcı WASM kodunu indirdiğinde, kodu hızla herhangi bir makinenin anlayabileceği bir dile dönüştürür.
+
+Resim
+
+C, C++ veya Rust ile yazdığımız kodlar WASM metin formatı olan .wat dosyalarına dönüştürülür. Tarayıcıya ise bu dosyanın binary hali olan .wasm dosyası sunulmaktadır. 
+
+Örneğin, aşağıdaki kod parçasında C++ ile faktöriyel hesaplaması yapan recursive bir fonksiyonu .wat ve .wasm formatına dönüştürülmüş halini görebilirsiniz. Binary olan .wasm, text olan ise .wat dosyasına aittir. .wasm ve .wat dosyalarını herhangi bir WasmExplorer aracılığıyla elde edebilirsiniz.
+
+Resim
+
+Ayrıca, Emscripten kullanarak da derleme yapabilirsiniz. Emscripten, hıza, boyuta ve Web platformuna özel odaklanan, LLVM kullanan, WASM için eksiksiz bir derleyici toolchain’dir. 
+
+Emscripten kurulumunu yaptıktan sonra aşağıdaki basit CLI komutu ile C ile yazdığınız kodu WASM dosyasına dönüştürerek tarayıcı üzerinden kullanılabilir hale getirebilirsiniz.
+
+> emcc hello.c -s WASM=1 -o hello.html
+
+Resim
+
+## Gerçek Dünyadan Güzel Bir Örnek
+Bir çoğumuzun bildiği sanal seyahat imkanı sunan Google Earth, Haziran 2019’daki Medium yazısına (Preview Google Earth on web across browsers) göre WASM ile beta sürümünü yayınladı. Google Earth, önceki versiyonunda NaCI kullanıldığı için, sadece Chrome tarayıcılarda kullanılabiliyordu, artık sadece Chrome’da değil Opera, Edge ve Firefox tarayıcılarda da kullanılabilir hale getirildi. Safari tarayıcısında da desteklenmesi için çalışmalar hala devam etmektedir. 
+
+Resim
+
+Aşağıdaki görselde göreceğiniz üzere Google Earth Web uygulamasını tarayıcımızda açtığımızda yüklenen dosyalar arasında .wasm dosyasını da görebilirsiniz.
+
+Resim
+
+## Son Birkaç Söz
+WebAssembly ile C, C++ ve Rust dillerinin dışında diğer popüler dillerle de geliştirme yapmak mümkün. Örneğin; 
+
+- C# ile Blazor
+- F# ile Bolero
+- Haxe ile WebIDL
+- Java ile TeaVM ya da Bytecoder
+- Kotlin ile TeaVM
+- TypeScript ile AssemblyScript
+
+WebAssembly konusunda çok fazla detaya girmeden, olabildiğince sade anlatmaya çalıştım. Detaylara girdikçe işin içerisinden çıkmak çok mümkün olmuyor. :) Umarım faydalı olmuştur.
+
+## Kaynaklar
+- https://www.infoworld.com/article/3291780/what-is-webassembly-the-next-generation-web-platform-explained.html
+- https://webassembly.org/docs/faq/
+- https://medium.com/google-earth/google-earth-comes-to-more-browsers-thanks-to-webassembly-1877d95810d6
+- https://hacks.mozilla.org/2017/09/bootcamps-webassembly-and-computer-vision/
+- https://blog.logrocket.com/webassembly-how-and-why-559b7f96cd71/
+
 
 
