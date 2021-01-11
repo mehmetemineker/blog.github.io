@@ -3,7 +3,7 @@ published: true
 layout: post
 title: WebAssembly - Bize Hızın Anlamını Göster
 date: '2021-01-11 12:00:00 -0500'
-thumbnail: /gallery/thumbnails/webassembly.jpg
+thumbnail: /gallery/thumbnails/webassembly.png
 categories:
   - Genel
   - Javascript
