@@ -26,11 +26,11 @@ WASM'ın sunmuş olduğu native performansı kadar iyi olmasa da, modern JavaScr
 Ancak, bir masaüstü uygulamasını bir web tarayıcısında çalıştırılacak şekilde geliştirmek istediğinizde, WASM tercih edilen format olacaktır. Yine de, JavaScript hala WASM yöntemlerini çağırmak için gereklidir.
 Aşağıdaki görselde, face detection uygulamasının WASM ve Javascript kıyaslaması yapılmaktadır. FPS değerlerine bakıldığında WASM çok daha performanslı bir şekilde görüntü işlemesi gerçekleştirebilmektedir.
 
-{% image5.png %} 
+{% asset_img image5.png %} 
 
 Yine bahsetmek gerekirse; masaüstü uygulamaların web uygulamalarına göre daha performanslı çalıştığı bilinir. Karmaşık ve yüksek CPU gerektiren işlemleri barındıran programlar genellikle masaüstü uygulamalarıdır. Masaüstü uygulamalarını native olarak sınıflandırırsak, WASM ile native performansa yakın ve web ortamında çalışan uygulamalar geliştirmek amaçlanmıştır. Günümüzde popüler bir çok web tarayıcısı WASM'ı desteklemektedir.
 
-{% image10.png %}
+{% asset_img image10.png %}
 
 WASM'dan önce Google'ın Native Client'ı ve Mozilla'nın da asm.js isimli teknolojileri ile native performansı sağlanmaktaydı. Tabii doğal olarak Google'ın odak noktası Chrome ve Mozilla'nınki ise Firefox'tu. Öncelikli olarak kendi tarayıcılarında çalışacak bir sistem geliştirmişlerdi. Bunlara kısaca değinmek gerekirse:
 
@@ -42,22 +42,22 @@ WASM'dan önce Google'ın Native Client'ı ve Mozilla'nın da asm.js isimli tekn
 
 Aşağıdaki görselde yine aynı face detection uygulamasının WASM, asm.js ve Javascript kıyaslaması yapılmaktadır. FPS değerlerine bakıldığında WASM çok daha performanslı bir şekilde görüntü işlemesi gerçekleştirebilmektedir.
 
-{% image2.png %}
+{% asset_img image2.png %}
 
 ## WebAssembly Nasıl Çalışır?
 WASM, yaratıcılarının deyimiyle bir "derleme hedefi" dir. Doğrudan WebAssembly yazmamıza gerek yoktur. Seçtiğimiz yüksek seviyeli dilde yazarız ve daha sonra WASM bayt kodu olarak derlenir. Bayt kod daha sonra client üzerinde çalıştırılır ve burada yerel makine koduna çevrilir ve yüksek hızda yürütülür.
 
-{% image4.png %}
+{% asset_img image4.png %}
 
 WASM herhangi bir özel makine için tasarlanmadığı için tam anlamıyla bir assembly dili değildir. Tarayıcılar içindir ve tarayıcıda yürütülecek kodu teslim ederken, kodunuzun ne tür makinelerde çalışacağını bilemeyiz. Tarayıcı WASM kodunu indirdiğinde, kodu hızla herhangi bir makinenin anlayabileceği bir dile dönüştürür.
 
-{% image9.png %}
+{% asset_img image9.png %}
 
 C, C++ veya Rust ile yazdığımız kodlar WASM metin formatı olan .wat dosyalarına dönüştürülür. Tarayıcıya ise bu dosyanın binary hali olan .wasm dosyası sunulmaktadır. 
 
 Örneğin, aşağıdaki kod parçasında C++ ile faktöriyel hesaplaması yapan recursive bir fonksiyonu .wat ve .wasm formatına dönüştürülmüş halini görebilirsiniz. Binary olan .wasm, text olan ise .wat dosyasına aittir. .wasm ve .wat dosyalarını herhangi bir WasmExplorer aracılığıyla elde edebilirsiniz.
 
-{% image8.png %}
+{% asset_img image8.png %}
 
 Ayrıca, Emscripten kullanarak da derleme yapabilirsiniz. Emscripten, hıza, boyuta ve Web platformuna özel odaklanan, LLVM kullanan, WASM için eksiksiz bir derleyici toolchain'dir. 
 
@@ -65,16 +65,16 @@ Emscripten kurulumunu yaptıktan sonra aşağıdaki basit CLI komutu ile C ile y
 
 > emcc hello.c -s WASM=1 -o hello.html
 
-{% image1.png %}
+{% asset_img image1.png %}
 
 ## Gerçek Dünyadan Güzel Bir Örnek
 Bir çoğumuzun bildiği sanal seyahat imkanı sunan Google Earth, Haziran 2019'daki Medium yazısına (Preview Google Earth on web across browsers) göre WASM ile beta sürümünü yayınladı. Google Earth, önceki versiyonunda NaCI kullanıldığı için, sadece Chrome tarayıcılarda kullanılabiliyordu, artık sadece Chrome'da değil Opera, Edge ve Firefox tarayıcılarda da kullanılabilir hale getirildi. Safari tarayıcısında da desteklenmesi için çalışmalar hala devam etmektedir. 
 
-{% image3.png %}
+{% asset_img image3.png %}
 
 Aşağıdaki görselde göreceğiniz üzere Google Earth Web uygulamasını tarayıcımızda açtığımızda yüklenen dosyalar arasında .wasm dosyasını da görebilirsiniz.
 
-{% image7.png %}
+{% asset_img image7.png %}
 
 ## Son Birkaç Söz
 WebAssembly ile C, C++ ve Rust dillerinin dışında diğer popüler dillerle de geliştirme yapmak mümkün. Örneğin; 
