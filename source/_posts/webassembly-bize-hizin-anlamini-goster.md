@@ -64,7 +64,7 @@ Ayrıca, Emscripten kullanarak da derleme yapabilirsiniz. Emscripten, hıza, boy
 
 Emscripten kurulumunu yaptıktan sonra aşağıdaki basit CLI komutu ile C ile yazdığınız kodu WASM dosyasına dönüştürerek tarayıcı üzerinden kullanılabilir hale getirebilirsiniz.
 
-> emcc hello.c -s WASM=1 -o hello.html
+	emcc hello.c -s WASM=1 -o hello.html
 
 {% asset_img image1.png %}
 
