@@ -1,7 +1,7 @@
 ---
-published: false
+published: true
 layout: post
-title: WebAssembly - Bize Hızın Anlamını Göster
+title: Yapay Zeka’ya Güvenebilir miyim? — Explainable AI
 date: '2021-01-11 12:00:00 -0500'
 thumbnail: /gallery/thumbnails/webassembly.png
 categories:
