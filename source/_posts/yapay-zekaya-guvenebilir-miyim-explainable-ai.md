@@ -14,6 +14,8 @@ tags:
 ---
 Asıl konumuza giriş yapmadan önce kısaca Yapay Zekanın ne demek olduğunu hatırlayalım; Yapay Zeka, bir çıktı elde etmek için insan zekası gibi davranan ve elde ettiği bilgilere göre yinelemeli olarak kendisini sürekli geliştirebilen sistem veya makinedir. Tekrarlanan öğrenme ve verisel keşif süreci ile birçok gizli katmana sahip sinir ağlarını kullanarak daha fazla ve daha derin verileri analiz eder. Bu noktada, Yapay Zekanın en önemli özelliği bağımsız öğrenme yeteneğidir diyebiliriz.
 
+<!--more-->
+
 Yapay Zeka, bağımsız öğrenme yeteneği ile algoritmalar oluşturarak karar verir. Karar verme sürecinde faydalandığı algoritmanın tam olarak ne olduğunu ve aldığı kararın gerekçelerini tam olarak bilemeyiz. Bu da Yapay Zekanın arkasındaki kara kutudur. Bu kara kutunun içerisinde neler olup bittiğini bilemiyoruz.
 
 Örneğin, aşağıdaki görselde de göreceğiniz üzere, daha önceden eğitilmiş bir Yapay Zekaya girdi olarak verilen bir fotoğrafın analiz süreci yer almaktadır. Kara kutu olarak belirtilen yer, Yapay Zekanın öğrenme sürecinde kendisine çıkardığı algoritma yer almaktadır. Buradaki algoritmanın nasıl işlediğini Yapay Zekayı geliştiren mühendis bile tam anlamıyla bilmemektedir.
