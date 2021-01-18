@@ -22,7 +22,7 @@ Nuance yöneticisi Nils Lenke, Yapay Zekanın kara kutusu hakkında şöyle diyo
 
 > İçerde ne olduğu her zaman açık değildir, siz Yapay Zekanın kendi kendini düzenlemesini sağlarsınız. Ancak bu durum, kendi geliştirirken size bunu nasıl yaptığını söyleyeceği demek değildir.
 
-Image for post
+{% asset_img image5.png %}
 
 1950’lerden günümüze kadar Yapay Zeka alanında birçok çalışma yapılmıştır. Bu doğrultuda Yapay Zekanın kullanım alanı her geçen gün daha da genişledi ve güvenlik, sağlık, otomotiv, otomasyon, bilgi teknolojileri ve finans gibi birçok sektörde kullanılmaya başlandı.
 
@@ -30,8 +30,8 @@ Gelişen teknoloji ve değişen ihtiyaçlar nedeniyle, her geçen gün Yapay Zek
 
 Aşağıdaki görsellerde Açıklanabilir Yapay Zeka öncesi ve sonrası basit olarak ifade edilmiştir. “Önce” olarak isimlendirilen görsele Kara Kutu Yapay Zeka (Blackbox AI), “Sonra” olarak isimlendirilen görsele ise Açıklanabilir Yapay Zeka (Explainable AI) diyebiliriz.
 
-Image for post
-Image for post
+{% asset_img image1.png %} 
+{% asset_img image4.png %} 
 
 Açıklanabilir Yapay Zeka sistemleri, ek bilgi sağlayan veya makine öğrenimi sisteminin iç işleyişine özgü verileri sunan bir arayüz sağlar. Bu sayede insanların bu karara Yapay Zeka tarafından nasıl ve neden ulaşıldığını anlamasına yardımcı olur.
 
@@ -40,7 +40,7 @@ Açıklanabilir Yapay Zeka yaklaşımı ile yorumlanabilirlik, şeffaflık ve a�
 
 Bu noktada Yapay Zekadaki açıklanabilirlik karmaşıklığa bağlıdır diyebiliriz. Genel olarak, daha karmaşık Yapay Zeka sistemleri daha doğrudur ancak daha az açıklanabilirken, daha az karmaşık modeller ise daha az doğrudur ancak daha açıklanabilirdir. Kısaca, açıklanabilirlik ve karmaşıklık arasında ters orantı vardır. Açıklanabilir Yapay Zeka sistemlerinden bunun dengeli olması faydalı olacaktır.
 
-Image for post
+{% asset_img image3.png %} 
 
 ## Açıklanabilir Yapay Zekanın Mevcut ve Potansiyel Kullanım Alanları
 Açıklanabilir Yapay Zekaya Yapay Zekanın kullanıldığı bir çok alanda ihtiyaç duyulabilir. Bu ihtiyacın ortaya çıkmasındaki asıl neden Yapay Zekaya duyulan güvendir. Yapay Zekanın, karar verme aşamasında tüm kontrolün bir algoritmalarda olması bazı problemlere neden olabilmektedir. Örneğin; otonom bir araç bir kazaya neden olursa bunun sorumlusu kim olacaktır? Yolcuları, Yapay Zekanın almış olduğu karardan sorumlu tutamayız. Ancak otonom araç almış olduğu kararları açıklayarak durumu netleştirebilir. Tabi böyle karmaşık bir durumu açıklamak üreticiler için bir hayli zor olacaktır. Benzer bir durum, bir hastanın iyileşme sürecinin kontrolüne otomatik olarak sahip olan Yapay Zeka uygulamaları için de söylenebilir. Kısacası, Açıklanabilir Yapay Zeka yaklaşımı Yapay Zekanın olduğu her yerde olabilir.
@@ -51,7 +51,7 @@ Yapay Zekanın en önemli özelliği bağımsız öğrenme yeteneğidir. Bağım
 
 Örneğin, Amazon tarafından iş başvurularını incelemek için geliştirilen bir Yapay Zeka sistemi, kadın adayları erkek adaylara kıyasla sürekli olarak geri plana atmıştır. Sistem, özellikle erkek adaylar tarafından aşırı doldurulan tarihsel veriler üzerine eğitilmiştir. Sonuç olarak, sistem kadınlara karşı önyargılı kararlar almıştır. İşin ilginç tarafı ise, cinsiyet belirleyici özellikler kaldırıldıktan sonra bile (örneğin ad ve cinsiyet) sistemin hala aynı sonucu vermesiydi. Sistem, erkek adayların kadın adayların kullanmadığı belirli kelimeleri veya cümleleri kullanma eğiliminde olduklarını tespit etmiştir. Erkek adaylar başarılarını anlatmak için daha özgüvenli ve otoriter bir dil kullanırken, kadın adaylar yetenekleri konusunda daha temkinli bir dil kullanmışlardı.
 
-Image for post
+{% asset_img image2.png %} 
 
 Benzer şekilde, 2018 UC Berkley çalışması, kredi başvurularını onaylamaya yönelik geleneksel ve makine tabanlı sistemlerin, Latin ve Afroamerikalı borçlulara eşdeğer bir Kafkas borçlusundan 6–9 baz puan daha yüksek faiz oranları uyguladığı sonucuna varmıştır. Bu sadece ahlaki açıdan yanlış değildir, görünüşte ten rengiyle bağlantılı tespitler yapmakla kalmıyor. Bu durumda, ahlaki açıdan adil olma, ancak aynı zamanda yasal olarak uyumlu olma ihtiyacı vardır.
 
