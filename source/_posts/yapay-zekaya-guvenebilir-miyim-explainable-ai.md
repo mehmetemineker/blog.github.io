@@ -2,14 +2,15 @@
 published: true
 layout: post
 title: Yapay Zeka’ya Güvenebilir miyim? — Explainable AI
-date: '2021-01-11 12:00:00 -0500'
-thumbnail: /gallery/thumbnails/webassembly.png
+date: '2021-01-18 12:00:00 -0500'
+thumbnail: /gallery/thumbnails/ai.png
 categories:
-  - Genel
-  - Javascript
+  - Yapay Zeka
 tags:
-  - webassembly
-  - blazor
+  - yapay-zeka
+  - artificial-intelligence
+  - explainable-ai
+  - aciklanabilir-yapay-zeka
 ---
 Asıl konumuza giriş yapmadan önce kısaca Yapay Zekanın ne demek olduğunu hatırlayalım; Yapay Zeka, bir çıktı elde etmek için insan zekası gibi davranan ve elde ettiği bilgilere göre yinelemeli olarak kendisini sürekli geliştirebilen sistem veya makinedir. Tekrarlanan öğrenme ve verisel keşif süreci ile birçok gizli katmana sahip sinir ağlarını kullanarak daha fazla ve daha derin verileri analiz eder. Bu noktada, Yapay Zekanın en önemli özelliği bağımsız öğrenme yeteneğidir diyebiliriz.
 
