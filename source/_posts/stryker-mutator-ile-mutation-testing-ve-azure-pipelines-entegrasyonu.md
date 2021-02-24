@@ -169,6 +169,8 @@ Yeniden **dotnet-stryker** komutunu çalıştırdığımda artık tüm mutantlar
 
 Burada pipeline sürecinin halihazırda olduğunu varsayarak anlatmaya çalışacağım. Stryker Mutator'dan rapor alabilmek için aşağıdaki gibi 3 agent job tanımının olması gerekiyor. İlki Stryker Mutator kurulumunu, ikincisi çalıştırılması ve üçüncüsü de oluşturulan raporun publish edilmesi. 
 
+{% asset_img image.png %}
+
 Bu üç adımın YAML içerikleri şu şekilde olmalıdır:
 
 **1. Install dotnet-stryker**
