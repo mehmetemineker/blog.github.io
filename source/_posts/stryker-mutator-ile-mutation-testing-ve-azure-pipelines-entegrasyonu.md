@@ -3,7 +3,7 @@ published: true
 layout: post
 title: Stryker Mutator ile Mutation Testing ve Azure Pipelines Entegrasyonu
 date: '2021-02-24 15:27:39 -0500'
-thumbnail: /gallery/thumbnails/chess.jpg
+thumbnail: /gallery/thumbnails/ninja.png
 categories: Devops
 tags:
   - devops
