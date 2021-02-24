@@ -25,6 +25,7 @@ Bir diğer araç ise [PIT Testing](https://pitest.org/). [PIT Testing ile SonarQ
 
 ## Stryker Mutator Kurulumu ve Kullanımı
 
+{% asset_img image.png %}
 Projemizin solution yapısı
 
 Basit matematiksel işlemler yapan, **Calc** isimli bir class oluşturalım. Şimdilik sadece toplama işlemini eklememiz yeterli olacaktır. Unit Test Case'i oluşturmak amacıyla "Validate" isimli bir metod yazarak sadece pozitif tamsayılar üzerinde işlem yapılmasını sağladım. NUnit kullanarak unit test yazacağız.
@@ -76,6 +77,8 @@ public class CalcTest
 
 Test Explorer üzerinden unit testlerimizi çalıştırdığımızda oluşan 5 case için tüm testlerin başarılı olduğunu gördük.
 
+{% asset_img image.png %}
+
 Buraya kadar olan kısım standart unit test geliştirme adımlarıydı. Siz de basit bir proje üzerinden denemeler yapabilirsiniz. 
 
 Şimdi sıra geldi Stryker Mutator kurulumuna. Stryker Mutator kurulumunu gerçekleştirebilmek için 2 yöntem var. Bunlardan bir tanesi Nuget ile kurulumu diğeri ise .NET CLI üzerinden kurulumudur. Ben CLI üzerinden kurulumu tercih ettim. Global yükleyerek de tüm tüm projelerimde kullanıma hazır hale getirmiş oldum. Tabi bunun için "dotnet CLI" bilgisayarımızda yüklü olmalı.
@@ -88,18 +91,29 @@ dotnet tool install -g dotnet-stryker
 
 Kurulumdan sonra **dotnet-stryker** komutu ile sağlamasını yapabiliriz.
 
+{% asset_img image.png %}
+
 Stryker Mutator'ı kullanıma hazır hale getirdikten sonra unit testlerimiz üzerinde analiz yapmaya başlayabiliriz.
 
 Stryker Mutator, Unit Test projemizin bulunduğu dizinde çalıştırılmalıdır. Bu sayede ekstra parametreler girmek zorunda kalmayız. Developer Powershell'i Unit Test projemizin bulunduğu dizini göstererek başlatalım. 
 
+{% asset_img image.png %}
+
 Bundan sonrası ise çok kolay, sadece **dotnet-stryker** komutunu yazıp Enter tuşuna bastığımızda mutasyon işlemlerini başlatmış oluruz.
+
+{% asset_img image.png %}
 
 Mutasyon işlemleri bittiğinde ise yukarıdaki gibi bir ekran görüntüsü ile karşılaşırız. Burada toplan test case'i, oluşturulan mutant sayısını ve bizim için daha önemli olan mutasyon skorunu ve rapor çıktısını görüyoruz.
 
 Örneğin, Calc sınıfımız için yazdığımız unit testler için mutasyon skoru %75 olarak belirlenmiş. Bu da şu demek oluyor: oluşturulan 8 mutanttan 6 tanesini yazmış olduğumuz unit testler öldürdü. 
+
 Aşağıda da oluşturulan html formatındaki raporun ekran görüntüsünü görebilirsiniz.
 
+{% asset_img image.png %}
+
 "Calc.cs" sayfasını açtığımızda, 6 mutantın öldüğünü, 1 tanesinin hayatta kaldığını ve 1 tanesinin de kapsanmadığını görmekteyiz. 
+
+{% asset_img image.png %}
 
 Şimdi sırayla bu sorunları çözelim: 
 
@@ -117,13 +131,18 @@ Aşağıda da oluşturulan html formatındaki raporun ekran görüntüsünü gö
 ```
 
 Validate metodunu incelediğimizde x veya y değişkenlerinin negatif gelmesi durumunda exception fırlattığını görürüz. Unit Test'imizde de **ArgumentException** gelmesini ve mesajın da beklenilen içeriğe sahip olmasını kontrol etmiş olduk. Eğer mesajın değerini kontrol etmezsek yeni bir mutantın oluşmasına neden oluruz. 
+
 Tekrar **dotnet-stryker** komutu ile rapor aldığımızda durum aşağıdaki gibi olacaktır:
+
+{% asset_img image.png %}
 
 Gördüğünüz üzere artık kapsanmayan kodumuz kalmadı ancak mutantı hala öldüremedik.
 
 **2 Hayatta kalan mutantı öldürelim:**
 
-	Yukarıda ekran görüntüsünde gördüğünüz 1 numaralı kırmızı kutu simgesine tıkladığımızda aşağıdaki gibi gözükecektir. Burada oluşturulan mutant ile [mantıksal operatör](https://stryker-mutator.io/docs/stryker-net/Mutators#logical-operators) değiştirilmiş ve bu değişikliğe rağmen unit testimiz hiçbir sorun çıkarmadan çalışmış. Bu da bizim istediğimiz bir durum değil.
+Yukarıda ekran görüntüsünde gördüğünüz 1 numaralı kırmızı kutu simgesine tıkladığımızda aşağıdaki gibi gözükecektir. Burada oluşturulan mutant ile [mantıksal operatör](https://stryker-mutator.io/docs/stryker-net/Mutators#logical-operators) değiştirilmiş ve bu değişikliğe rağmen unit testimiz hiçbir sorun çıkarmadan çalışmış. Bu da bizim istediğimiz bir durum değil.
+    
+{% asset_img image.png %}
 
 "Validate" metodu için yazmış olduğumuz Unit Test'imizin TestCase'inde x ve y değişkenlerine -1 göndermiştik. Ancak mantıksal operatör değiştiğinde x ve y değişkenlerine göndermiş olduğumuz -1 değeri oluşan mutantın hayatta kalmasına neden olmaktadır. Test Case'ler arasına x ve y değişkenlerine sırasıyla (-1,-1) - (-1,1) ve (1,-1) değerlerini gönderdiğimizde, mantıksal operatör değişikliğinden ortaya çıkan mutantın ölmesini sağlayacaktır. 
 
@@ -138,7 +157,7 @@ public void Validate_Only_Positive_Integers_Test(int x, int y)
 }
 ```
 
-Unit Test'mizin son hali yukarıdaki gibi olacaktır. Bu değişiklikler sayesinde kod ileride parçacığı üzerinde yapılacak değişikliklerin Unit Test'lerimizi etkileme ihtimalini artımış oluyoruz. 
+Unit Test'mizin son hali yukarıdaki gibi olacaktır. Bu değişiklikler sayesinde kod ileride parçacığı üzerinde yapılacak değişikliklerin Unit Test'lerimizi etkileme ihtimalini artırmış oluyoruz. 
 
 Yeniden **dotnet-stryker** komutunu çalıştırdığımda artık tüm mutantların öldürüldüğünü görebiliriz.
 
