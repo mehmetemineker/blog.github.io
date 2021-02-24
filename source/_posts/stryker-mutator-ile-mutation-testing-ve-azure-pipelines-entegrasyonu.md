@@ -159,6 +159,8 @@ public void Validate_Only_Positive_Integers_Test(int x, int y)
 
 Unit Test'mizin son hali yukarıdaki gibi olacaktır. Bu değişiklikler sayesinde kod ileride parçacığı üzerinde yapılacak değişikliklerin Unit Test'lerimizi etkileme ihtimalini artırmış oluruz. 
 
+{% asset_img image.png %}
+
 Yeniden **dotnet-stryker** komutunu çalıştırdığımda artık tüm mutantların öldürüldüğünü görebiliriz.
 
 Şimdi de son dokunuşları yapalım artık :) Azure Pipelines üzerinde, Stryker Mutator ile almış olduğumuz raporu CI sürecinde görmemizi sağlayalım. 
