@@ -207,4 +207,6 @@ steps:
 
 Azure Pipelines kısmında yapacaklarımız sadece bu kadar. Pipeline'ımızı Run ettiğimizde aşağıdaki görseldeki gibi Mutation Report sekmesi gelecektir. Bu sekmenin detayında rapor sonucunu görebiliriz.
 
+{% asset_img image.png %}
+
 Faydalı olması dileğiyle, başka yazılarda görüşmek üzere :)
