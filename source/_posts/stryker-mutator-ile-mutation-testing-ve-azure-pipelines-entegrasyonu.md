@@ -77,7 +77,7 @@ public class CalcTest
 
 Test Explorer üzerinden unit testlerimizi çalıştırdığımızda oluşan 5 case için tüm testlerin başarılı olduğunu gördük.
 
-{% asset_img image.png %}
+{% asset_img image12.png %}
 
 Buraya kadar olan kısım standart unit test geliştirme adımlarıydı. Siz de basit bir proje üzerinden denemeler yapabilirsiniz. 
 
@@ -91,17 +91,17 @@ dotnet tool install -g dotnet-stryker
 
 Kurulumdan sonra **dotnet-stryker** komutu ile sağlamasını yapabiliriz.
 
-{% asset_img image.png %}
+{% asset_img image10.png %}
 
 Stryker Mutator'ı kullanıma hazır hale getirdikten sonra unit testlerimiz üzerinde analiz yapmaya başlayabiliriz.
 
 Stryker Mutator, Unit Test projemizin bulunduğu dizinde çalıştırılmalıdır. Bu sayede ekstra parametreler girmek zorunda kalmayız. Developer Powershell'i Unit Test projemizin bulunduğu dizini göstererek başlatalım. 
 
-{% asset_img image.png %}
+{% asset_img image4.png %}
 
 Bundan sonrası ise çok kolay, sadece **dotnet-stryker** komutunu yazıp Enter tuşuna bastığımızda mutasyon işlemlerini başlatmış oluruz.
 
-{% asset_img image.png %}
+{% asset_img image2.png %}
 
 Mutasyon işlemleri bittiğinde ise yukarıdaki gibi bir ekran görüntüsü ile karşılaşırız. Burada toplan test case'i, oluşturulan mutant sayısını ve bizim için daha önemli olan mutasyon skorunu ve rapor çıktısını görüyoruz.
 
@@ -109,11 +109,11 @@ Mutasyon işlemleri bittiğinde ise yukarıdaki gibi bir ekran görüntüsü ile
 
 Aşağıda da oluşturulan html formatındaki raporun ekran görüntüsünü görebilirsiniz.
 
-{% asset_img image.png %}
+{% asset_img image3.png %}
 
 "Calc.cs" sayfasını açtığımızda, 6 mutantın öldüğünü, 1 tanesinin hayatta kaldığını ve 1 tanesinin de kapsanmadığını görmekteyiz. 
 
-{% asset_img image.png %}
+{% asset_img image1.png %}
 
 Şimdi sırayla bu sorunları çözelim: 
 
@@ -134,7 +134,7 @@ Validate metodunu incelediğimizde x veya y değişkenlerinin negatif gelmesi du
 
 Tekrar **dotnet-stryker** komutu ile rapor aldığımızda durum aşağıdaki gibi olacaktır:
 
-{% asset_img image.png %}
+{% asset_img image6.png %}
 
 Gördüğünüz üzere artık kapsanmayan kodumuz kalmadı ancak mutantı hala öldüremedik.
 
@@ -142,7 +142,7 @@ Gördüğünüz üzere artık kapsanmayan kodumuz kalmadı ancak mutantı hala �
 
 Yukarıda ekran görüntüsünde gördüğünüz 1 numaralı kırmızı kutu simgesine tıkladığımızda aşağıdaki gibi gözükecektir. Burada oluşturulan mutant ile [mantıksal operatör](https://stryker-mutator.io/docs/stryker-net/Mutators#logical-operators) değiştirilmiş ve bu değişikliğe rağmen unit testimiz hiçbir sorun çıkarmadan çalışmış. Bu da bizim istediğimiz bir durum değil.
     
-{% asset_img image.png %}
+{% asset_img image5.png %}
 
 "Validate" metodu için yazmış olduğumuz Unit Test'imizin TestCase'inde x ve y değişkenlerine -1 göndermiştik. Ancak mantıksal operatör değiştiğinde x ve y değişkenlerine göndermiş olduğumuz -1 değeri oluşan mutantın hayatta kalmasına neden olmaktadır. Test Case'ler arasına x ve y değişkenlerine sırasıyla (-1,-1) - (-1,1) ve (1,-1) değerlerini gönderdiğimizde, mantıksal operatör değişikliğinden ortaya çıkan mutantın ölmesini sağlayacaktır. 
 
@@ -159,7 +159,7 @@ public void Validate_Only_Positive_Integers_Test(int x, int y)
 
 Unit Test'mizin son hali yukarıdaki gibi olacaktır. Bu değişiklikler sayesinde kod ileride parçacığı üzerinde yapılacak değişikliklerin Unit Test'lerimizi etkileme ihtimalini artırmış oluruz. 
 
-{% asset_img image.png %}
+{% asset_img image11.png %}
 
 Yeniden **dotnet-stryker** komutunu çalıştırdığımda artık tüm mutantların öldürüldüğünü görebiliriz.
 
@@ -169,7 +169,7 @@ Yeniden **dotnet-stryker** komutunu çalıştırdığımda artık tüm mutantlar
 
 Burada pipeline sürecinin halihazırda olduğunu varsayarak anlatmaya çalışacağım. Stryker Mutator'dan rapor alabilmek için aşağıdaki gibi 3 agent job tanımının olması gerekiyor. İlki Stryker Mutator kurulumunu, ikincisi çalıştırılması ve üçüncüsü de oluşturulan raporun publish edilmesi. 
 
-{% asset_img image.png %}
+{% asset_img image13.png %}
 
 Bu üç adımın YAML içerikleri şu şekilde olmalıdır:
 
@@ -207,6 +207,6 @@ steps:
 
 Azure Pipelines kısmında yapacaklarımız sadece bu kadar. Pipeline'ımızı Run ettiğimizde aşağıdaki görseldeki gibi Mutation Report sekmesi gelecektir. Bu sekmenin detayında rapor sonucunu görebiliriz.
 
-{% asset_img image.png %}
+{% asset_img image7.png %}
 
 Faydalı olması dileğiyle, başka yazılarda görüşmek üzere :)
