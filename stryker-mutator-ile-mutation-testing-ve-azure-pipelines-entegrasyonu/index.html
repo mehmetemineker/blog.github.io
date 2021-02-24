@@ -7,24 +7,23 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>EntityFramework AsNoTracking Nedir? - Mehmet Emin Eker</title>
+<title>Stryker Mutator ile Mutation Testing ve Azure Pipelines Entegrasyonu - Mehmet Emin Eker</title>
 
 
-    <meta name="description" content="Merhaba arkadaşlar, bugün .Net Core projem için Generic Repository örneği yapıyordum. Github üzerinden örnek kodlara bakarken Entity sorgularındaki AsNoTracking ifadesini gördüm. Yaklaşık 4 yıldır MVC">
+    <meta name="description" content="Yazmış olduğumuz bir unit testin kalitesini anlamak için, testi yazılan kod parçacığı üzerinde değişiklikler yaptığımızda, unit testin sonucuna bir etkisi olup olmadığını analiz ederek kalitesini ve k">
 <meta property="og:type" content="article">
-<meta property="og:title" content="EntityFramework AsNoTracking Nedir?">
-<meta property="og:url" content="https://www.mehmetemineker.com/entityframework-asnotracking-nedir/index.html">
+<meta property="og:title" content="Stryker Mutator ile Mutation Testing ve Azure Pipelines Entegrasyonu">
+<meta property="og:url" content="https://www.mehmetemineker.com/stryker-mutator-ile-mutation-testing-ve-azure-pipelines-entegrasyonu/index.html">
 <meta property="og:site_name" content="Mehmet Emin Eker">
-<meta property="og:description" content="Merhaba arkadaşlar, bugün .Net Core projem için Generic Repository örneği yapıyordum. Github üzerinden örnek kodlara bakarken Entity sorgularındaki AsNoTracking ifadesini gördüm. Yaklaşık 4 yıldır MVC">
+<meta property="og:description" content="Yazmış olduğumuz bir unit testin kalitesini anlamak için, testi yazılan kod parçacığı üzerinde değişiklikler yaptığımızda, unit testin sonucuna bir etkisi olup olmadığını analiz ederek kalitesini ve k">
 <meta property="og:locale" content="tr_TR">
-<meta property="og:image" content="https://www.mehmetemineker.com/gallery/thumbnails/csharp.jpg">
-<meta property="article:published_time" content="2018-05-13T17:27:39.000Z">
-<meta property="article:modified_time" content="2021-02-24T13:55:27.669Z">
+<meta property="og:image" content="https://www.mehmetemineker.com/gallery/thumbnails/chess.jpg">
+<meta property="article:published_time" content="2021-02-24T17:27:39.000Z">
+<meta property="article:modified_time" content="2021-02-24T13:55:27.677Z">
 <meta property="article:author" content="Mehmet Emin Eker">
-<meta property="article:tag" content="entityframework">
-<meta property="article:tag" content="asnotracking">
+<meta property="article:tag" content="devops">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://www.mehmetemineker.com/gallery/thumbnails/csharp.jpg">
+<meta name="twitter:image" content="https://www.mehmetemineker.com/gallery/thumbnails/chess.jpg">
 
 
 
@@ -137,7 +136,7 @@
     
     <div class="card-image">
         <span  class="image is-7by1">
-            <img class="thumbnail" src="/gallery/thumbnails/csharp.jpg" alt="EntityFramework AsNoTracking Nedir?">
+            <img class="thumbnail" src="/gallery/thumbnails/chess.jpg" alt="Stryker Mutator ile Mutation Testing ve Azure Pipelines Entegrasyonu">
         </span>
     </div>
     
@@ -145,10 +144,10 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2018-05-13T17:27:39.000Z">13.05.2018</time>
+                <time class="level-item has-text-grey" datetime="2021-02-24T17:27:39.000Z">24.02.2021</time>
                 
                 <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/Net/">.Net</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/Net/C/">C#</a>
+                <a class="has-link-grey -link" href="/categories/Devops/">Devops</a>
                 </div>
                 
                 
@@ -158,32 +157,58 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                EntityFramework AsNoTracking Nedir?
+                Stryker Mutator ile Mutation Testing ve Azure Pipelines Entegrasyonu
             
         </h1>
         <div class="content">
-            <p>Merhaba arkadaşlar, bugün .Net Core projem için Generic Repository örneği yapıyordum. Github üzerinden örnek kodlara bakarken Entity sorgularındaki AsNoTracking ifadesini gördüm. Yaklaşık 4 yıldır MVC projelerinde görev alıyorum. AsNoTracking ifadesini şimdiye kadar fark edemediğim için üzüldüm, şimdi bunu keşfettiğim için de mutluyum. 🙂 Sizin de bundan faydalanmanızı istediğim için çok geciktirmeden blogumda paylaşmak istedim.</p>
-<p>Bildiğiniz üzere EntityFramework ile bir select işlemi yaptığınızda, gelen data içeriğini güncelleyip SaveChanges yaparsak değişiklikler veritabanına yansır. Bu işlemi her zaman istemiyor olabilirsiniz. Bu durumda AsNoTracking ifadesi yardımımıza koşuyor. Bu ifade ile yaptığımız entity sorgusu sadece okumalıktır. Üzerinde değişiklik yapıp SaveChanges yaptığımızda veritabanında hiçbir değişiklik olmaz. Bu da bize minimum bellek kullanımı ve optimum performans sağlayacaktır. Çok hoj 🙂</p>
+            <p>Yazmış olduğumuz bir unit testin kalitesini anlamak için, testi yazılan kod parçacığı üzerinde değişiklikler yaptığımızda, unit testin sonucuna bir etkisi olup olmadığını analiz ederek kalitesini ve kapsamını kontrol edebiliriz. Bu şekilde yapmış olduğumuz işleme bir nevi “testin testini yapmak” diyebiliriz. Bu yapılan işleme Mutation Testing denilmektedir. Kod parçacıklarının mutasyona uğratılması sonucunda kalite ve kapsam analizi yapılmaktadır. Yeni unit testler yazmak ve mevcut unit testlerin kalitesini değerlendirmek için Mutation Testing yapılmalıdır. </p>
 <a id="more"></a>
-<h3 id="AsNoTracking-Performansi"><a href="#AsNoTracking-Performansi" class="headerlink" title="AsNoTracking Performansı"></a>AsNoTracking Performansı</h3><p>AsNoTracking ifadesinin performansı ne kadar etkilediğine görsel olarak birlikte bakalım:</p>
-<img src="/entityframework-asnotracking-nedir/asnotracking-bulk-execution-time.png" class=""> 
+<p>Mutation Testing, bir kod parçacığını küçük şekillerde değiştirmeyi amaçlar. Bu değişiklikler, aritmetik operatör, eşiklik veya mantıksal ifadelerin değiştirilmesi gibi işlemlerdir. Değişikliklerin sonucunda oluşan her bir yeni kod parçacığına “Mutant” denilir. Burada beklenilen durum, unit test çalıştığı zaman oluşan mutantın ölmesidir. Eğer mutant ölmez ise unit testimizin kapsamadığı bir durum var demektir. Kod parçacığı üzerinde ileride yapılacak bir değişiklik muhtemelen unit testimizi etkilemeyecektir. Mutation Testing manuel olarak yapılabileceği gibi otomatik olarak araçlar kullanılarak da yapılabilir.<br>Mutation Testing temelde 3 türe ayrılabilir. Bunlar; ifade mutasyonu (statement mutation), karar mutasyonu (decision mutation) ve değer mutasyonudur (value mutation).</p>
+<blockquote>
+<p>Bilgi<br>Mutation Testing ilk olarak Richard Lipton tarafından 1971’de önerildi. Bir Mutation Testing aracının ilk uygulaması, 1980 yılında Timothy Budd tarafından yapıldı.</p>
+</blockquote>
+<p>Otomatik olarak Mutation Testing yapmamızı sağlayan araçlardan bir tanesi Stryker Mutator’dır. Stryker Mutator ile kod parçacıklarını mutasyona uğratarak yani değiştirerek mutation testing işlemini yapmamızı kolaylaştıran bir araçtır. Bu araç sayesinde, daha kaliteli ve dayanıklı, kapsamı geniş unit testler yazabiliriz. .NET desteği ile CLI üzerinden testimizi analiz ettirebiliriz.<br>Bir diğer araç ise PIT Testing. PIT Testing ile SonarQube üzerinden de analiz sonuçlarını görebiliriz. Stryker Mutator ile de Azure Pipelines entegrasyonu sayesinde SonarQube ihtiyacı olmadan da analiz sonuçlarını görmemiz mümkün.<br>İşin hikaye kısmını çok fazla uzatmadan artık örneğimize geçelim:<br>Stryker Mutator Kurulumu ve Kullanımı</p>
+<p>Projemizin solution yapısı<br>Basit matematiksel işlemler yapan, Calc isimli bir class oluşturalım. Şimdilik sadece toplama işlemini eklememiz yeterli olacaktır. Unit Test Case’i oluşturmak amacıyla “Validate” isimli bir metod yazarak sadece pozitif tamsayılar üzerinde işlem yapılmasını sağladım. NUnit kullanarak unit test yazacağız.</p>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Calc</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">double</span> <span class="title">Sum</span>(<span class="params"><span class="keyword">int</span> x, <span class="keyword">int</span> y</span>)</span></span><br><span class="line"><span class="function"></span>    &#123;</span><br><span class="line">        Validate(x, y);</span><br><span class="line">        <span class="keyword">return</span> x + y;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Validate</span>(<span class="params"><span class="keyword">int</span> x, <span class="keyword">int</span> y</span>)</span></span><br><span class="line"><span class="function"></span>    &#123;</span><br><span class="line">        <span class="keyword">if</span> (x &lt; <span class="number">0</span> || y &lt; <span class="number">0</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> ArgumentException(<span class="string">"Only positive integers can be used."</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<img src="/entityframework-asnotracking-nedir/asnotracking-bulk-memory-usage.png" class=""> 
 
-<img src="/entityframework-asnotracking-nedir/asnotracking-bulk-relative-execution-time.png" class=""> 
+<p>Aşağıda da Calc clasımız için yazdığımız unit testleri görebilirsiniz.</p>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">CalcTest</span></span><br><span class="line">&#123;</span><br><span class="line">    Calc _testClass;</span><br><span class="line"></span><br><span class="line">    [<span class="meta">SetUp</span>]</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Setup</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>    &#123;</span><br><span class="line">        _testClass = <span class="keyword">new</span> Calc();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    [<span class="meta">TestCase(0, 0, 0)</span>]</span><br><span class="line">    [<span class="meta">TestCase(1, 0, 1)</span>]</span><br><span class="line">    [<span class="meta">TestCase(1, 1, 2)</span>]</span><br><span class="line">    [<span class="meta">TestCase(2, 1, 3)</span>]</span><br><span class="line">    [<span class="meta">TestCase(9, 4, 13)</span>]</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">SumTest</span>(<span class="params"><span class="keyword">int</span> x, <span class="keyword">int</span> y, <span class="keyword">int</span> expectedResult</span>)</span></span><br><span class="line"><span class="function"></span>    &#123;</span><br><span class="line">        <span class="keyword">var</span> actualResult = _testClass.Sum(x, y);</span><br><span class="line">        Assert.AreEqual(expectedResult, actualResult);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<img src="/entityframework-asnotracking-nedir/asnotracking-bulk-reletive-memory-usage.png" class=""> 
 
-<h3 id="AsNoTracking-Kullanimi"><a href="#AsNoTracking-Kullanimi" class="headerlink" title="AsNoTracking Kullanımı"></a>AsNoTracking Kullanımı</h3><p>Bu ifadenin kullanımı ise aşağıda göreceğiniz üzere çok kolay:</p>
-<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">context.Set&lt;TEntity&gt;().AsNoTracking();</span><br></pre></td></tr></table></figure>
+<p>Test Explorer üzerinden unit testlerimizi çalıştırdığımızda oluşan 5 case için tüm testlerin başarılı olduğunu gördük.</p>
+<p>Buraya kadar olan kısım standart unit test geliştirme adımlarıydı. Siz de basit bir proje üzerinden denemeler yapabilirsiniz.<br>Şimdi sıra geldi Stryker Mutator kurulumuna. Stryker Mutator kurulumunu gerçekleştirebilmek için 2 yöntem var. Bunlardan bir tanesi Nuget ile kurulumu diğeri ise .NET CLI üzerinden kurulumudur. Ben CLI üzerinden kurulumu tercih ettim. Global yükleyerek de tüm tüm projelerimde kullanıma hazır hale getirmiş oldum. Tabi bunun için “dotnet CLI” bilgisayarımızda yüklü olmalı.<br>Aşağıdaki komut ile Stryker Mutator global olarak bilgisayarıma yükleyebiliriz.<br>dotnet tool install -g dotnet-stryker</p>
+<p>Kurulumdan sonra <strong>dotnet-stryker</strong> komutu ile sağlamasını yapabiliriz.</p>
+<p>Stryker Mutator’ı kullanıma hazır hale getirdikten sonra unit testlerimiz üzerinde analiz yapmaya başlayabiliriz.<br>Stryker Mutator, Unit Test projemizin bulunduğu dizinde çalıştırılmalıdır. Bu sayede ekstra parametreler girmek zorunda kalmayız. Developer Powershell’i Unit Test projemizin bulunduğu dizini göstererek başlatalım. </p>
+<p>Bundan sonrası ise çok kolay, sadece <strong>dotnet-stryker</strong> komutunu yazıp Enter tuşuna bastığımızda mutasyon işlemlerini başlatmış oluruz.</p>
+<p>Mutasyon işlemleri bittiğinde ise yukarıdaki gibi bir ekran görüntüsü ile karşılaşırız. Burada toplan test case’i, oluşturulan mutant sayısını ve bizim için daha önemli olan mutasyon skorunu ve rapor çıktısını görüyoruz.<br>Örneğin, Calc sınıfımız için yazdığımız unit testler için mutasyon skoru %75 olarak belirlenmiş. Bu da şu demek oluyor: oluşturulan 8 mutanttan 6 tanesini yazmış olduğumuz unit testler öldürdü.<br>Aşağıda da oluşturulan html formatındaki raporun ekran görüntüsünü görebilirsiniz.</p>
+<p>“Calc.cs” sayfasını açtığımızda, 6 mutantın öldüğünü, 1 tanesinin hayatta kaldığını ve 1 tanesinin de kapsanmadığını görmekteyiz. </p>
+<p>Şimdi sırayla bu sorunları çözelim:<br>Kodun Unit Test ile kapsanmasını sağlayalım:<br>    Kodumuzu incelediğimizde 15.satırdaki şartı sağlayan x veya y değeri sıfırdan küçük gönderilirse 17.satırın kapsanmasını sağlayabiliriz. Bunun için “Sum” metodu üzerinden unit test yazabileceğimiz gibi “Validate” metodu için ayrı bir unit test de yazabiliriz. Ben daha anlaşılır olması adına ayrı metod yazmayı tercih ettim.</p>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">[<span class="meta">TestCase(-1, -1)</span>]</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Validate_Only_Positive_Integers_Test</span>(<span class="params"><span class="keyword">int</span> x, <span class="keyword">int</span> y</span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">var</span> exception = Assert.Throws(Is.TypeOf&lt;ArgumentException&gt;(), () =&gt; _testClass.Validate(x, y));</span><br><span class="line">    Assert.AreEqual(<span class="string">"Only positive integers can be used."</span>, exception.Message);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>Diğer bir kullanım yönetimi ise DbContext ayarlarından yapılabilir. Bu da tüm queryler için geçerli olacaktır:</p>
-<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">context.ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;</span><br></pre></td></tr></table></figure>
+<p>Validate metodunu incelediğimizde x veya y değişkenlerinin negatif gelmesi durumunda exception fırlattığını görürüz. Unit Test’imizde de  ArgumentException  gelmesini ve mesajın da beklenilen içeriğe sahip olmasını kontrol etmiş olduk. Eğer mesajın değerini kontrol etmezsek yeni bir mutantın oluşmasına neden oluruz.<br>Tekrar  dotnet-stryker  komutu ile rapor aldığımızda durum aşağıdaki gibi olacaktır:</p>
+<p>Gördüğünüz üzere artık kapsanmayan kodumuz kalmadı ancak mutantı hala öldüremedik.<br>Hayatta kalan mutantı öldürelim:<br>    Yukarıda ekran görüntüsünde gördüğünüz () simgesine tıkladığımızda aşağıdaki gibi gözükecektir. Burada oluşturulan mutant ile mantıksal operatör değiştirilmiş ve bu değişikliğe rağmen unit testimiz hiçbir sorun çıkarmadan çalışmış. Bu da bizim istediğimiz bir durum değil.</p>
+<p>“Validate” metodu için yazmış olduğumuz Unit Test’imizin TestCase’inde x ve y değişkenlerine -1 göndermiştik. Ancak mantıksal operatör değiştiğinde x ve y değişkenlerine göndermiş olduğumuz -1 değeri oluşan mutantın hayatta kalmasına neden olmaktadır. Test Case’ler arasına x ve y değişkenlerine sırasıyla (-1,-1) - (-1,1) ve (1,-1) değerlerini gönderdiğimizde, mantıksal operatör değişikliğinden ortaya çıkan mutantın ölmesini sağlayacaktır. </p>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">[<span class="meta">TestCase(-1, -1)</span>]</span><br><span class="line">[<span class="meta">TestCase(1, -1)</span>]</span><br><span class="line">[<span class="meta">TestCase(-1, 1)</span>]</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Validate_Only_Positive_Integers_Test</span>(<span class="params"><span class="keyword">int</span> x, <span class="keyword">int</span> y</span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">var</span> exception = Assert.Throws(Is.TypeOf&lt;ArgumentException&gt;(), () =&gt; _testClass.Validate(x, y));</span><br><span class="line">    Assert.AreEqual(<span class="string">"Only positive integers can be used."</span>, exception.Message);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h5 id="Kaynaklar"><a href="#Kaynaklar" class="headerlink" title="Kaynaklar:"></a>Kaynaklar:</h5><ol>
-<li><a href="http://blog.staticvoid.co.nz/2012/entity_framework_and_asnotracking/">http://blog.staticvoid.co.nz/2012/entity_framework_and_asnotracking/</a></li>
-<li><a href="https://docs.microsoft.com/en-us/ef/core/querying/tracking">https://docs.microsoft.com/en-us/ef/core/querying/tracking</a></li>
-</ol>
+<p>Unit Test’mizin son hali yukarıdaki gibi olacaktır. Bu değişiklikler sayesinde kod ileride parçacığı üzerinde yapılacak değişikliklerin Unit Test’lerimizi etkileme ihtimalini artımış oluyoruz. </p>
+<p>Yeniden  dotnet-stryker  komutunu çalıştırdığımda artık tüm mutantların öldürüldüğünü görebiliriz.<br>Şimdi de son dokunuşları yapalım artık :) Azure Pipelines üzerinde, Stryker Mutator ile almış olduğumuz raporu CI sürecinde görmemizi sağlayalım.<br>Azure Pipelines Entegrasyonu<br>Burada pipeline sürecinin halihazırda olduğunu varsayarak anlatmaya çalışacağım. Stryker Mutator’dan rapor alabilmek için aşağıdaki gibi 3 agent job tanımının olması gerekiyor. İlki Stryker Mutator kurulumunu, ikincisi çalıştırılması ve üçüncüsü de oluşturulan raporun publish edilmesi. </p>
+<p>Bu üç adımın YAML içerikleri şu şekilde olmalıdır:</p>
+<p><strong>1.Install dotnet-stryker</strong></p>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">steps:</span><br><span class="line">- task: DotNetCoreCLI@<span class="number">2</span></span><br><span class="line">  displayName: <span class="string">'Install dotnet-stryker'</span></span><br><span class="line">  inputs:</span><br><span class="line">    command: custom</span><br><span class="line">    custom: tool</span><br><span class="line">    arguments: <span class="string">'install dotnet-stryker --tool-path $(Agent.BuildDirectory)/tools'</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>2.Run dotnet-stryker</strong></p>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">steps:</span><br><span class="line">- powershell: <span class="string">'$(Agent.BuildDirectory)/tools/dotnet-stryker'</span></span><br><span class="line">  workingDirectory: StrykerMutatorSample.Calc.Test</span><br><span class="line">  displayName: <span class="string">'Run dotnet-stryker'</span></span><br></pre></td></tr></table></figure>
+
+
+<p><strong>3.Publish Mutation Test Report</strong></p>
+<p>Bu adımda önemli olan, Mutation Report Publisher eklentisinin yüklenmesi.</p>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">steps:</span><br><span class="line">- task: stryker-mutator.mutation-report-publisher<span class="number">.44</span>d9cfb7<span class="number">-7</span>efd<span class="number">-48e2</span>-b2ae<span class="number">-4750950271b</span>e.PublishMutationReport@<span class="number">0</span></span><br><span class="line">  displayName: <span class="string">'Publish Mutation Test Report'</span></span><br></pre></td></tr></table></figure>
+
+
+
+<p>Azure Pipelines kısmında yapacaklarımız sadece bu kadar. Pipeline’ımızı Run ettiğimizde aşağıdaki görseldeki gibi Mutation Report sekmesi gelecektir. Bu sekmenin detayında rapor sonucunu görebiliriz.</p>
+<p>Faydalı olması dileğiyle, başka yazılarda görüşmek üzere :)</p>
 
         </div>
         
@@ -191,7 +216,7 @@
             <div class="level-start">
                 <div class="level-item">
                     <span class="is-size-6 has-text-grey has-mr-7">#</span>
-                    <a class="has-link-grey -link" href="/tags/asnotracking/" rel="tag">asnotracking</a>, <a class="has-link-grey -link" href="/tags/entityframework/" rel="tag">entityframework</a>
+                    <a class="has-link-grey -link" href="/tags/devops/" rel="tag">devops</a>
                 </div>
             </div>
         </div>
@@ -213,17 +238,10 @@
 <div class="card card-transparent">
     <div class="level post-navigation is-flex-wrap is-mobile">
         
-        <div class="level-start">
-            <a class="level level-item has-link-grey  article-nav-prev" href="/jquery-video-extend/">
-                <i class="level-item fas fa-chevron-left"></i>
-                <span class="level-item">jQuery Video Extend</span>
-            </a>
-        </div>
-        
         
         <div class="level-end">
-            <a class="level level-item has-link-grey  article-nav-next" href="/evrimsel-surecin-simulasyonu-genetik-algoritmalar-1/">
-                <span class="level-item">Evrimsel Sürecin Simülasyonu – Genetik Algoritmalar – 1</span>
+            <a class="level level-item has-link-grey  article-nav-next" href="/blockchain-interoperability/">
+                <span class="level-item">Blockchain — Interoperability</span>
                 <i class="level-item fas fa-chevron-right"></i>
             </a>
         </div>
