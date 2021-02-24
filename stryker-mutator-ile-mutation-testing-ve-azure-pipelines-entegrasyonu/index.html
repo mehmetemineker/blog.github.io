@@ -19,7 +19,7 @@
 <meta property="og:locale" content="tr_TR">
 <meta property="og:image" content="https://www.mehmetemineker.com/gallery/thumbnails/chess.jpg">
 <meta property="article:published_time" content="2021-02-24T17:27:39.000Z">
-<meta property="article:modified_time" content="2021-02-24T14:11:22.129Z">
+<meta property="article:modified_time" content="2021-02-24T14:11:30.577Z">
 <meta property="article:author" content="Mehmet Emin Eker">
 <meta property="article:tag" content="devops">
 <meta name="twitter:card" content="summary">
@@ -222,6 +222,8 @@
 <figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">[<span class="meta">TestCase(-1, -1)</span>]</span><br><span class="line">[<span class="meta">TestCase(1, -1)</span>]</span><br><span class="line">[<span class="meta">TestCase(-1, 1)</span>]</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Validate_Only_Positive_Integers_Test</span>(<span class="params"><span class="keyword">int</span> x, <span class="keyword">int</span> y</span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">var</span> exception = Assert.Throws(Is.TypeOf&lt;ArgumentException&gt;(), () =&gt; _testClass.Validate(x, y));</span><br><span class="line">    Assert.AreEqual(<span class="string">"Only positive integers can be used."</span>, exception.Message);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>Unit Test’mizin son hali yukarıdaki gibi olacaktır. Bu değişiklikler sayesinde kod ileride parçacığı üzerinde yapılacak değişikliklerin Unit Test’lerimizi etkileme ihtimalini artırmış oluruz. </p>
+
+
 <p>Yeniden <strong>dotnet-stryker</strong> komutunu çalıştırdığımda artık tüm mutantların öldürüldüğünü görebiliriz.</p>
 <p>Şimdi de son dokunuşları yapalım artık :) Azure Pipelines üzerinde, Stryker Mutator ile almış olduğumuz raporu CI sürecinde görmemizi sağlayalım. </p>
 <h2 id="Azure-Pipelines-Entegrasyonu"><a href="#Azure-Pipelines-Entegrasyonu" class="headerlink" title="Azure Pipelines Entegrasyonu"></a>Azure Pipelines Entegrasyonu</h2><p>Burada pipeline sürecinin halihazırda olduğunu varsayarak anlatmaya çalışacağım. Stryker Mutator’dan rapor alabilmek için aşağıdaki gibi 3 agent job tanımının olması gerekiyor. İlki Stryker Mutator kurulumunu, ikincisi çalıştırılması ve üçüncüsü de oluşturulan raporun publish edilmesi. </p>
