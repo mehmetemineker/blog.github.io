@@ -19,7 +19,7 @@
 <meta property="og:locale" content="tr_TR">
 <meta property="og:image" content="https://www.mehmetemineker.com/gallery/thumbnails/chess.jpg">
 <meta property="article:published_time" content="2021-02-24T17:27:39.000Z">
-<meta property="article:modified_time" content="2021-02-24T14:11:30.577Z">
+<meta property="article:modified_time" content="2021-02-24T14:11:44.017Z">
 <meta property="article:author" content="Mehmet Emin Eker">
 <meta property="article:tag" content="devops">
 <meta name="twitter:card" content="summary">
@@ -227,6 +227,8 @@
 <p>Yeniden <strong>dotnet-stryker</strong> komutunu çalıştırdığımda artık tüm mutantların öldürüldüğünü görebiliriz.</p>
 <p>Şimdi de son dokunuşları yapalım artık :) Azure Pipelines üzerinde, Stryker Mutator ile almış olduğumuz raporu CI sürecinde görmemizi sağlayalım. </p>
 <h2 id="Azure-Pipelines-Entegrasyonu"><a href="#Azure-Pipelines-Entegrasyonu" class="headerlink" title="Azure Pipelines Entegrasyonu"></a>Azure Pipelines Entegrasyonu</h2><p>Burada pipeline sürecinin halihazırda olduğunu varsayarak anlatmaya çalışacağım. Stryker Mutator’dan rapor alabilmek için aşağıdaki gibi 3 agent job tanımının olması gerekiyor. İlki Stryker Mutator kurulumunu, ikincisi çalıştırılması ve üçüncüsü de oluşturulan raporun publish edilmesi. </p>
+
+
 <p>Bu üç adımın YAML içerikleri şu şekilde olmalıdır:</p>
 <p><strong>1. Install dotnet-stryker</strong></p>
 <figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">steps:</span><br><span class="line">- task: DotNetCoreCLI@<span class="number">2</span></span><br><span class="line">  displayName: <span class="string">'Install dotnet-stryker'</span></span><br><span class="line">  inputs:</span><br><span class="line">    command: custom</span><br><span class="line">    custom: tool</span><br><span class="line">    arguments: <span class="string">'install dotnet-stryker --tool-path $(Agent.BuildDirectory)/tools'</span></span><br></pre></td></tr></table></figure>
