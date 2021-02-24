@@ -25,7 +25,7 @@ Bir diğer araç ise [PIT Testing](https://pitest.org/). [PIT Testing ile SonarQ
 
 ## Stryker Mutator Kurulumu ve Kullanımı
 
-{% asset_img image.png %}
+{% asset_img image9.png %}
 Projemizin solution yapısı
 
 Basit matematiksel işlemler yapan, **Calc** isimli bir class oluşturalım. Şimdilik sadece toplama işlemini eklememiz yeterli olacaktır. Unit Test Case'i oluşturmak amacıyla "Validate" isimli bir metod yazarak sadece pozitif tamsayılar üzerinde işlem yapılmasını sağladım. NUnit kullanarak unit test yazacağız.
