@@ -157,7 +157,7 @@ public void Validate_Only_Positive_Integers_Test(int x, int y)
 }
 ```
 
-Unit Test'mizin son hali yukarıdaki gibi olacaktır. Bu değişiklikler sayesinde kod ileride parçacığı üzerinde yapılacak değişikliklerin Unit Test'lerimizi etkileme ihtimalini artırmış oluyoruz. 
+Unit Test'mizin son hali yukarıdaki gibi olacaktır. Bu değişiklikler sayesinde kod ileride parçacığı üzerinde yapılacak değişikliklerin Unit Test'lerimizi etkileme ihtimalini artırmış oluruz. 
 
 Yeniden **dotnet-stryker** komutunu çalıştırdığımda artık tüm mutantların öldürüldüğünü görebiliriz.
 
