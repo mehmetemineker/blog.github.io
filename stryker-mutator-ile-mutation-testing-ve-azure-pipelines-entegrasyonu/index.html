@@ -19,7 +19,7 @@
 <meta property="og:locale" content="tr_TR">
 <meta property="og:image" content="https://www.mehmetemineker.com/gallery/thumbnails/ninja.png">
 <meta property="article:published_time" content="2021-02-24T17:27:39.000Z">
-<meta property="article:modified_time" content="2021-02-25T07:52:26.548Z">
+<meta property="article:modified_time" content="2021-02-25T09:59:07.589Z">
 <meta property="article:author" content="Mehmet Emin Eker">
 <meta property="article:tag" content="unittest">
 <meta property="article:tag" content="devops">
@@ -171,7 +171,7 @@
 <blockquote>
 <p>Bilgi<br>Mutation Testing ilk olarak Richard Lipton tarafından 1971’de önerildi. Bir Mutation Testing aracının ilk uygulaması, 1980 yılında Timothy Budd tarafından yapıldı.</p>
 </blockquote>
-<p>Otomatik olarak Mutation Testing yapmamızı sağlayan araçlardan bir tanesi Stryker Mutator’dır. Stryker Mutator ile kod parçacıklarını mutasyona uğratarak yani değiştirerek mutation testing işlemini yapmamızı kolaylaştıran bir araçtır. Bu araç sayesinde, daha kaliteli ve dayanıklı, kapsamı geniş unit testler yazabiliriz. .NET desteği ile CLI üzerinden testimizi analiz ettirebiliriz. </p>
+<p>Otomatik olarak Mutation Testing yapmamızı sağlayan araçlardan bir tanesi <a href="https://stryker-mutator.io/">Stryker Mutator</a>‘dır. Stryker Mutator ile kod parçacıklarını mutasyona uğratarak yani değiştirerek mutation testing işlemini yapmamızı kolaylaştıran bir araçtır. Bu araç sayesinde, daha kaliteli ve dayanıklı, kapsamı geniş unit testler yazabiliriz. .NET desteği ile CLI üzerinden testimizi analiz ettirebiliriz. </p>
 <p>Bir diğer araç ise <a href="https://pitest.org/">PIT Testing</a>. <a href="https://www.triology.de/en/blog-entries/mutation-testing-sonarqube">PIT Testing ile SonarQube</a> üzerinden de analiz sonuçlarını görebiliriz. Stryker Mutator ile de Azure Pipelines entegrasyonu sayesinde SonarQube ihtiyacı olmadan da analiz sonuçlarını görmemiz mümkün.</p>
 <p>İşin hikaye kısmını çok fazla uzatmadan artık örneğimize geçelim: </p>
 <h2 id="Stryker-Mutator-Kurulumu-ve-Kullanimi"><a href="#Stryker-Mutator-Kurulumu-ve-Kullanimi" class="headerlink" title="Stryker Mutator Kurulumu ve Kullanımı"></a>Stryker Mutator Kurulumu ve Kullanımı</h2><img src="/stryker-mutator-ile-mutation-testing-ve-azure-pipelines-entegrasyonu/image9.png" class="">
@@ -187,7 +187,7 @@
 
 <p>Buraya kadar olan kısım standart unit test geliştirme adımlarıydı. Siz de basit bir proje üzerinden denemeler yapabilirsiniz. </p>
 <p>Şimdi sıra geldi Stryker Mutator kurulumuna. Stryker Mutator kurulumunu gerçekleştirebilmek için 2 yöntem var. Bunlardan bir tanesi Nuget ile kurulumu diğeri ise .NET CLI üzerinden kurulumudur. Ben CLI üzerinden kurulumu tercih ettim. Global yükleyerek de tüm projelerimde kullanıma hazır hale getirmiş oldum. Tabi bunun için “dotnet CLI” bilgisayarımızda yüklü olmalı.</p>
-<p>Aşağıdaki komut ile Stryker Mutator global olarak bilgisayarıma yükleyebiliriz.</p>
+<p>Aşağıdaki komut ile Stryker Mutator global olarak bilgisayarımıza yükleyebiliriz.</p>
 <figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dotnet tool install -g dotnet-stryker</span><br></pre></td></tr></table></figure>
 
 <p>Kurulumdan sonra <strong>dotnet-stryker</strong> komutu ile sağlamasını yapabiliriz.</p>
