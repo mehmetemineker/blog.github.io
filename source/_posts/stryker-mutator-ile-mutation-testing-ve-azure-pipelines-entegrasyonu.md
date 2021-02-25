@@ -4,9 +4,16 @@ layout: post
 title: Stryker Mutator ile Mutation Testing ve Azure Pipelines Entegrasyonu
 date: '2021-02-24 15:27:39 -0500'
 thumbnail: /gallery/thumbnails/ninja.png
-categories: Devops
+categories:
+  - Devops
+  - .Net
+  - 'C#'
+  - Unit Test
 tags:
   - devops
+  - unittest
+  - csharp
+  - testing
 ---
 Yazmış olduğumuz bir unit testin kalitesini anlamak için, testi yazılan kod parçacığı üzerinde değişiklikler yaptığımızda, unit testin sonucuna bir etkisi olup olmadığını analiz ederek kalitesini ve kapsamını kontrol edebiliriz. Bu şekilde yapmış olduğumuz işleme bir nevi **"testin testini yapmak"** diyebiliriz. Bu yapılan işleme **Mutation Testing** denilmektedir. Kod parçacıklarının mutasyona uğratılması sonucunda kalite ve kapsam analizi yapılmaktadır. Yeni unit testler yazmak ve mevcut unit testlerin kalitesini değerlendirmek için Mutation Testing yapılmalıdır. 
 <!--more-->
