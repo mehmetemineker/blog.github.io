@@ -88,7 +88,7 @@ Test Explorer üzerinden unit testlerimizi çalıştırdığımızda oluşan 5 c
 
 Buraya kadar olan kısım standart unit test geliştirme adımlarıydı. Siz de basit bir proje üzerinden denemeler yapabilirsiniz. 
 
-Şimdi sıra geldi Stryker Mutator kurulumuna. Stryker Mutator kurulumunu gerçekleştirebilmek için 2 yöntem var. Bunlardan bir tanesi Nuget ile kurulumu diğeri ise .NET CLI üzerinden kurulumudur. Ben CLI üzerinden kurulumu tercih ettim. Global yükleyerek de tüm tüm projelerimde kullanıma hazır hale getirmiş oldum. Tabi bunun için "dotnet CLI" bilgisayarımızda yüklü olmalı.
+Şimdi sıra geldi Stryker Mutator kurulumuna. Stryker Mutator kurulumunu gerçekleştirebilmek için 2 yöntem var. Bunlardan bir tanesi Nuget ile kurulumu diğeri ise .NET CLI üzerinden kurulumudur. Ben CLI üzerinden kurulumu tercih ettim. Global yükleyerek de tüm projelerimde kullanıma hazır hale getirmiş oldum. Tabi bunun için "dotnet CLI" bilgisayarımızda yüklü olmalı.
 
 Aşağıdaki komut ile Stryker Mutator global olarak bilgisayarıma yükleyebiliriz.
 
@@ -164,7 +164,7 @@ public void Validate_Only_Positive_Integers_Test(int x, int y)
 }
 ```
 
-Unit Test'mizin son hali yukarıdaki gibi olacaktır. Bu değişiklikler sayesinde kod ileride parçacığı üzerinde yapılacak değişikliklerin Unit Test'lerimizi etkileme ihtimalini artırmış oluruz. 
+Unit Test'mizin son hali yukarıdaki gibi olacaktır. Bu değişiklikler sayesinde ileride kod parçacığı üzerinde yapılacak değişikliklerin Unit Test'lerimizi etkileme ihtimalini artırmış oluruz. 
 
 {% asset_img image11.png %}
 
