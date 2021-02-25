@@ -49,7 +49,7 @@ public class Calc
 }
 ```
 
-Aşağıda da Calc clasımız için yazdığımız unit testleri görebilirsiniz.
+Aşağıda da Calc classımız için yazdığımız unit testleri görebilirsiniz.
 
 ```csharp
 public class CalcTest
@@ -119,7 +119,7 @@ Aşağıda da oluşturulan html formatındaki raporun ekran görüntüsünü gö
 
 **1. Kodun Unit Test ile kapsanmasını sağlayalım:**
 
-	Kodumuzu incelediğimizde 15.satırdaki şartı sağlayan x veya y değeri sıfırdan küçük gönderilirse 17.satırın kapsanmasını sağlayabiliriz. Bunun için "Sum" metodu üzerinden unit test yazabileceğimiz gibi "Validate" metodu için ayrı bir unit test de yazabiliriz. Ben daha anlaşılır olması adına ayrı metod yazmayı tercih ettim.
+Kodumuzu incelediğimizde 15.satırdaki şartı sağlayan x veya y değeri sıfırdan küçük gönderilirse 17.satırın kapsanmasını sağlayabiliriz. Bunun için "Sum" metodu üzerinden unit test yazabileceğimiz gibi "Validate" metodu için ayrı bir unit test de yazabiliriz. Ben daha anlaşılır olması adına ayrı metod yazmayı tercih ettim.
     
 ```csharp
         [TestCase(-1, -1)]
@@ -138,7 +138,7 @@ Tekrar **dotnet-stryker** komutu ile rapor aldığımızda durum aşağıdaki gi
 
 Gördüğünüz üzere artık kapsanmayan kodumuz kalmadı ancak mutantı hala öldüremedik.
 
-**2 Hayatta kalan mutantı öldürelim:**
+**2. Hayatta kalan mutantı öldürelim:**
 
 Yukarıda ekran görüntüsünde gördüğünüz 1 numaralı kırmızı kutu simgesine tıkladığımızda aşağıdaki gibi gözükecektir. Burada oluşturulan mutant ile [mantıksal operatör](https://stryker-mutator.io/docs/stryker-net/Mutators#logical-operators) değiştirilmiş ve bu değişikliğe rağmen unit testimiz hiçbir sorun çıkarmadan çalışmış. Bu da bizim istediğimiz bir durum değil.
     
@@ -197,7 +197,7 @@ steps:
 
 **3. Publish Mutation Test Report**
 
-Bu adımda önemli olan, Mutation Report Publisher eklentisinin yüklenmesi.
+Bu adımda önemli olan, [Mutation Report Publisher](https://marketplace.visualstudio.com/items?itemName=stryker-mutator.mutation-report-publisher) eklentisinin yüklenmesi.
 
 ```csharp
 steps:
