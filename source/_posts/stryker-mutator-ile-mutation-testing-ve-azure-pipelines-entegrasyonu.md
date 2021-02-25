@@ -217,3 +217,10 @@ Azure Pipelines kısmında yapacaklarımız sadece bu kadar. Pipeline'ımızı R
 {% asset_img image7.png %}
 
 Faydalı olması dileğiyle, başka yazılarda görüşmek üzere :)
+
+## Kaynaklar:
+- https://serkancantech.medium.com/birim-testleri-mutantlara-kar%C5%9F%C4%B1-95787ee4b68e
+- https://en.wikipedia.org/wiki/Mutation_testing
+- http://csharp.academy/mutation-testing/
+- https://www.triology.de/en/blog-entries/mutation-testing
+- https://www.partech.nl/en/publications/2020/12/introduction-to-mutation-testing#
