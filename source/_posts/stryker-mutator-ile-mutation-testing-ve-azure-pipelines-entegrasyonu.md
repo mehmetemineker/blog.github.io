@@ -24,7 +24,7 @@ Mutation Testing temelde 3 türe ayrılabilir. Bunlar; ifade mutasyonu (statemen
 > Bilgi
 Mutation Testing ilk olarak Richard Lipton tarafından 1971'de önerildi. Bir Mutation Testing aracının ilk uygulaması, 1980 yılında Timothy Budd tarafından yapıldı.
 
-Otomatik olarak Mutation Testing yapmamızı sağlayan araçlardan bir tanesi Stryker Mutator'dır. Stryker Mutator ile kod parçacıklarını mutasyona uğratarak yani değiştirerek mutation testing işlemini yapmamızı kolaylaştıran bir araçtır. Bu araç sayesinde, daha kaliteli ve dayanıklı, kapsamı geniş unit testler yazabiliriz. .NET desteği ile CLI üzerinden testimizi analiz ettirebiliriz. 
+Otomatik olarak Mutation Testing yapmamızı sağlayan araçlardan bir tanesi [Stryker Mutator](https://stryker-mutator.io/)'dır. Stryker Mutator ile kod parçacıklarını mutasyona uğratarak yani değiştirerek mutation testing işlemini yapmamızı kolaylaştıran bir araçtır. Bu araç sayesinde, daha kaliteli ve dayanıklı, kapsamı geniş unit testler yazabiliriz. .NET desteği ile CLI üzerinden testimizi analiz ettirebiliriz. 
 
 Bir diğer araç ise [PIT Testing](https://pitest.org/). [PIT Testing ile SonarQube](https://www.triology.de/en/blog-entries/mutation-testing-sonarqube) üzerinden de analiz sonuçlarını görebiliriz. Stryker Mutator ile de Azure Pipelines entegrasyonu sayesinde SonarQube ihtiyacı olmadan da analiz sonuçlarını görmemiz mümkün.
 
@@ -90,7 +90,7 @@ Buraya kadar olan kısım standart unit test geliştirme adımlarıydı. Siz de 
 
 Şimdi sıra geldi Stryker Mutator kurulumuna. Stryker Mutator kurulumunu gerçekleştirebilmek için 2 yöntem var. Bunlardan bir tanesi Nuget ile kurulumu diğeri ise .NET CLI üzerinden kurulumudur. Ben CLI üzerinden kurulumu tercih ettim. Global yükleyerek de tüm projelerimde kullanıma hazır hale getirmiş oldum. Tabi bunun için "dotnet CLI" bilgisayarımızda yüklü olmalı.
 
-Aşağıdaki komut ile Stryker Mutator global olarak bilgisayarıma yükleyebiliriz.
+Aşağıdaki komut ile Stryker Mutator global olarak bilgisayarımıza yükleyebiliriz.
 
 ```csharp
 dotnet tool install -g dotnet-stryker
